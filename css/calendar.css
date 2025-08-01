@@ -1,0 +1,274 @@
+/* GW2 Community Calendar Styles */
+
+.gw2-calendar-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.gw2-admin-controls {
+    background: #f8f9fa;
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.gw2-admin-controls .button {
+    background: #007cba;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.gw2-admin-controls .button:hover {
+    background: #005a87;
+}
+
+.gw2-admin-controls .button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#gw2-download-status {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#gw2-download-status.success {
+    color: #28a745;
+}
+
+#gw2-download-status.error {
+    color: #dc3545;
+}
+
+#gw2-calendar {
+    padding: 20px;
+    min-height: 500px;
+}
+
+#gw2-calendar.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* FullCalendar Anpassungen */
+.fc {
+    font-family: inherit;
+}
+
+.fc-toolbar {
+    margin-bottom: 20px;
+}
+
+.fc-toolbar-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+}
+
+.fc-button {
+    background: #007cba !important;
+    border-color: #007cba !important;
+    color: white !important;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.fc-button:hover {
+    background: #005a87 !important;
+    border-color: #005a87 !important;
+    transform: translateY(-1px);
+}
+
+.fc-button:focus {
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.3);
+}
+
+.fc-button-active {
+    background: #005a87 !important;
+    border-color: #005a87 !important;
+}
+
+.fc-daygrid-day {
+    transition: background-color 0.2s ease;
+}
+
+.fc-daygrid-day:hover {
+    background-color: #f8f9fa;
+}
+
+.fc-day-today {
+    background-color: #e3f2fd !important;
+}
+
+.fc-event {
+    background: #007cba;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.fc-event:hover {
+    background: #005a87;
+    transform: scale(1.02);
+}
+
+.fc-event-title {
+    font-weight: 600;
+}
+
+/* Event Modal */
+.gw2-event-modal {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.gw2-event-modal-content {
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease;
+}
+
+.gw2-event-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.gw2-event-modal-close:hover {
+    color: #333;
+}
+
+.gw2-event-modal h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.gw2-event-details p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.gw2-event-details strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gw2-admin-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .gw2-admin-controls .button {
+        width: 100%;
+    }
+    
+    #gw2-calendar {
+        padding: 10px;
+    }
+    
+    .fc-toolbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .fc-toolbar-chunk {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gw2-event-modal-content {
+        margin: 10px;
+        padding: 20px;
+    }
+}
+
+/* Animationen */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading Spinner */
+.gw2-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007cba;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Tooltip Anpassungen */
+.tooltip {
+    font-size: 12px;
+}
+
+.tooltip-inner {
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.tooltip-arrow::before {
+    border-top-color: #333;
+} 

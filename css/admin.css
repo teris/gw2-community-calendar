@@ -1,0 +1,378 @@
+/* GW2 Calendar Admin Styles */
+.gw2-admin-container {
+    max-width: 800px;
+}
+
+.gw2-admin-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.gw2-admin-section h2 {
+    margin-top: 0;
+    color: #23282d;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.gw2-admin-controls {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gw2-admin-controls .button {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#gw2-download-status {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Upload Form Styles */
+.gw2-upload-controls {
+    margin-top: 15px;
+}
+
+#gw2-upload-status {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#gw2-upload-status.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#gw2-upload-status.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Settings Form Styles */
+.gw2-settings-controls {
+    margin-top: 15px;
+}
+
+#gw2-settings-status {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#gw2-settings-status.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#gw2-settings-status.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+#custom_css {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    line-height: 1.4;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#custom_css:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+    outline: none;
+}
+
+#gw2-upload-button {
+    position: relative;
+}
+
+.gw2-upload-loading {
+    display: none;
+}
+
+.gw2-upload-text {
+    display: inline;
+}
+
+/* File Input Styling */
+#ics_file {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#ics_file:focus {
+    border-color: #0073aa;
+    outline: none;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+#gw2-download-status.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#gw2-download-status.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.gw2-loading {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 5px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Cache Info Table */
+#gw2-cache-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#gw2-cache-info th {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    width: 200px;
+}
+
+#gw2-cache-info td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#gw2-cache-info code {
+    background: #f1f1f1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Shortcode Section */
+.gw2-admin-section code {
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-family: monospace;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.gw2-admin-section ul {
+    margin-left: 20px;
+}
+
+.gw2-admin-section li {
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gw2-admin-controls .button {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    #gw2-download-status {
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    #gw2-cache-info th,
+    #gw2-cache-info td {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+    }
+    
+    #gw2-cache-info th {
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+}
+
+/* Admin Dashboard Widget */
+.gw2-calendar-admin-widget {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.gw2-calendar-admin-widget h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.gw2-calendar-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.gw2-status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.gw2-status-indicator.online {
+    background-color: #28a745;
+}
+
+.gw2-status-indicator.offline {
+    background-color: #dc3545;
+}
+
+.gw2-status-indicator.warning {
+    background-color: #ffc107;
+}
+
+.gw2-calendar-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gw2-stat-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.gw2-stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007cba;
+    display: block;
+}
+
+.gw2-stat-label {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Admin Notices */
+.gw2-admin-notice {
+    background: #fff;
+    border-left: 4px solid #007cba;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin: 5px 0 15px;
+    padding: 12px;
+}
+
+.gw2-admin-notice.success {
+    border-left-color: #46b450;
+}
+
+.gw2-admin-notice.error {
+    border-left-color: #dc3232;
+}
+
+.gw2-admin-notice.warning {
+    border-left-color: #ffb900;
+}
+
+/* Settings Page */
+.gw2-settings-page {
+    max-width: 800px;
+}
+
+.gw2-settings-section {
+    background: white;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.gw2-settings-section h2 {
+    margin-top: 0;
+    color: #23282d;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.gw2-form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.gw2-form-table th {
+    text-align: left;
+    padding: 15px 10px 15px 0;
+    width: 200px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.gw2-form-table td {
+    padding: 15px 10px;
+    line-height: 1.3;
+    vertical-align: top;
+}
+
+.gw2-form-table input[type="text"],
+.gw2-form-table input[type="number"],
+.gw2-form-table select {
+    width: 100%;
+    max-width: 400px;
+}
+
+.gw2-form-table .description {
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+    font-size: 13px;
+} 

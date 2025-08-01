@@ -1,0 +1,15 @@
+# GW2 Community Calendar Cache Protection
+# Verhindere direkten Zugriff auf Cache-Dateien
+<Files "*.ics">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Erlaube nur PHP-Zugriff
+<Files "*.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# Verstecke Verzeichnis-Listing
+Options -Indexes 
