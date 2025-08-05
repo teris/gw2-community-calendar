@@ -1,8 +1,28 @@
-/* GW2 Calendar Admin Styles */
+/* GW2 Community Calendar Admin Styles */
+
 .gw2-admin-container {
-    max-width: 800px;
+    width: 90%;
+    margin: 20px 0;
 }
 
+/* Zweispaltiges Layout */
+.gw2-admin-columns {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.gw2-admin-column-left {
+    flex: 1;
+    min-width: 0; /* Verhindert Überlauf */
+}
+
+.gw2-admin-column-right {
+    flex: 1;
+    min-width: 0; /* Verhindert Überlauf */
+}
+
+/* Admin Sektionen */
 .gw2-admin-section {
     background: #fff;
     border: 1px solid #ccd0d4;
@@ -14,137 +34,96 @@
 
 .gw2-admin-section h2 {
     margin-top: 0;
+    margin-bottom: 15px;
     color: #23282d;
     font-size: 1.3em;
-    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
 }
 
+.gw2-admin-section h3 {
+    color: #0073aa;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.gw2-admin-section p {
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Kontrollen */
 .gw2-admin-controls {
-    margin: 20px 0;
-    padding: 15px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 .gw2-admin-controls .button {
-    margin-right: 10px;
-    margin-bottom: 5px;
+    margin: 0;
 }
 
 #gw2-download-status {
-    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
     margin-left: 10px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-weight: bold;
 }
 
-/* Upload Form Styles */
+#gw2-download-status.success {
+    color: #46b450;
+}
+
+#gw2-download-status.error {
+    color: #dc3232;
+}
+
+/* Upload Form */
 .gw2-upload-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 15px;
 }
 
 #gw2-upload-status {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 #gw2-upload-status.success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
+    color: #46b450;
 }
 
 #gw2-upload-status.error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    color: #dc3232;
 }
 
-/* Settings Form Styles */
+/* Settings Form */
 .gw2-settings-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 15px;
 }
 
 #gw2-settings-status {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 #gw2-settings-status.success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
+    color: #46b450;
 }
 
 #gw2-settings-status.error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    color: #dc3232;
 }
 
-#custom_css {
-    font-family: 'Courier New', monospace;
-    font-size: 12px;
-    line-height: 1.4;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    padding: 10px;
-}
-
-#custom_css:focus {
-    border-color: #0073aa;
-    box-shadow: 0 0 0 1px #0073aa;
-    outline: none;
-}
-
-#gw2-upload-button {
-    position: relative;
-}
-
-.gw2-upload-loading {
-    display: none;
-}
-
-.gw2-upload-text {
-    display: inline;
-}
-
-/* File Input Styling */
-#ics_file {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 100%;
-    max-width: 400px;
-}
-
-#ics_file:focus {
-    border-color: #0073aa;
-    outline: none;
-    box-shadow: 0 0 0 1px #0073aa;
-}
-
-#gw2-download-status.success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-}
-
-#gw2-download-status.error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-}
-
+/* Loading Animation */
 .gw2-loading {
     display: inline-block;
     width: 16px;
@@ -153,7 +132,7 @@
     border-top: 2px solid #0073aa;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 @keyframes spin {
@@ -161,218 +140,262 @@
     100% { transform: rotate(360deg); }
 }
 
-/* Cache Info Table */
-#gw2-cache-info table {
-    width: 100%;
-    border-collapse: collapse;
+/* Shortcode Dokumentation */
+.gw2-admin-column-right .gw2-admin-section {
+    background: #f9f9f9;
+    border-left: 4px solid #0073aa;
 }
 
-#gw2-cache-info th {
-    text-align: left;
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-    font-weight: 600;
-    width: 200px;
-}
-
-#gw2-cache-info td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-}
-
-#gw2-cache-info code {
-    background: #f1f1f1;
-    padding: 2px 4px;
+.gw2-admin-column-right code {
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 3px;
-    font-family: monospace;
+    padding: 2px 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #0073aa;
 }
 
-/* Shortcode Section */
-.gw2-admin-section code {
-    background: #f1f1f1;
-    padding: 8px 12px;
-    border-radius: 3px;
-    font-family: monospace;
-    display: inline-block;
-    margin: 5px 0;
+
+
+.gw2-admin-column-right ul {
+    margin: 10px 0;
+    padding-left: 20px;
 }
 
-.gw2-admin-section ul {
-    margin-left: 20px;
-}
-
-.gw2-admin-section li {
+.gw2-admin-column-right li {
     margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.gw2-admin-column-right li code {
+    background: #f1f1f1;
+    color: #333;
+    font-size: 12px;
+}
+
+/* Cache Info */
+#gw2-cache-info {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#gw2-cache-info p {
+    margin: 5px 0;
+    font-family: monospace;
+    font-size: 13px;
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .gw2-admin-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .gw2-admin-column-left,
+    .gw2-admin-column-right {
+        flex: none;
+    }
+}
+
 @media (max-width: 768px) {
+    .gw2-admin-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
     .gw2-admin-controls .button {
-        display: block;
         width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     
-    #gw2-download-status {
-        display: block;
-        margin-left: 0;
-        margin-top: 10px;
+    .gw2-upload-controls,
+    .gw2-settings-controls {
+        flex-direction: column;
+        align-items: stretch;
     }
     
-    #gw2-cache-info th,
-    #gw2-cache-info td {
-        display: block;
+    .gw2-admin-section {
+        padding: 15px;
+    }
+    
+    .form-table td {
+        padding: 8px 0;
+    }
+    
+    .form-table th {
+        padding: 8px 0;
         width: 100%;
-        border-bottom: none;
-    }
-    
-    #gw2-cache-info th {
-        border-bottom: 1px solid #ddd;
-        font-weight: bold;
+        display: block;
     }
 }
 
-/* Admin Dashboard Widget */
-.gw2-calendar-admin-widget {
-    background: white;
-    border: 1px solid #e5e5e5;
-    border-radius: 4px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.gw2-calendar-admin-widget h3 {
-    margin-top: 0;
-    color: #333;
-    font-size: 1.2em;
+/* Form Table Anpassungen */
+.form-table th {
     font-weight: 600;
+    color: #23282d;
 }
 
-.gw2-calendar-status {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
+.form-table .description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
 }
 
-.gw2-status-indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
+/* Textarea Anpassungen */
+#custom_css {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.4;
 }
 
-.gw2-status-indicator.online {
-    background-color: #28a745;
+/* Button Hover Effekte */
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.gw2-status-indicator.offline {
-    background-color: #dc3545;
+/* Status Nachrichten */
+.gw2-status-message {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-weight: 500;
 }
 
-.gw2-status-indicator.warning {
-    background-color: #ffc107;
+.gw2-status-message.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
 }
 
-.gw2-calendar-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+.gw2-status-message.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.gw2-status-message.info {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+}
+
+/* Event-ID-Liste Styles */
+.gw2-event-ids-container {
     margin-top: 15px;
 }
 
-.gw2-stat-item {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 4px;
-    text-align: center;
-}
-
-.gw2-stat-number {
-    font-size: 2em;
-    font-weight: bold;
-    color: #007cba;
-    display: block;
-}
-
-.gw2-stat-label {
-    font-size: 0.9em;
-    color: #666;
-    margin-top: 5px;
-}
-
-/* Admin Notices */
-.gw2-admin-notice {
-    background: #fff;
-    border-left: 4px solid #007cba;
-    box-shadow: 0 1px 1px rgba(0,0,0,.04);
-    margin: 5px 0 15px;
-    padding: 12px;
-}
-
-.gw2-admin-notice.success {
-    border-left-color: #46b450;
-}
-
-.gw2-admin-notice.error {
-    border-left-color: #dc3232;
-}
-
-.gw2-admin-notice.warning {
-    border-left-color: #ffb900;
-}
-
-/* Settings Page */
-.gw2-settings-page {
-    max-width: 800px;
-}
-
-.gw2-settings-section {
-    background: white;
-    border: 1px solid #ccd0d4;
-    border-radius: 4px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.gw2-settings-section h2 {
-    margin-top: 0;
-    color: #23282d;
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-.gw2-form-table {
-    width: 100%;
+.gw2-event-ids-container table {
     border-collapse: collapse;
+    width: 100%;
 }
 
-.gw2-form-table th {
-    text-align: left;
-    padding: 15px 10px 15px 0;
-    width: 200px;
-    line-height: 1.3;
+.gw2-event-ids-container th {
+    background: #f1f1f1;
     font-weight: 600;
-    color: #23282d;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
 }
 
-.gw2-form-table td {
-    padding: 15px 10px;
-    line-height: 1.3;
+.gw2-event-ids-container td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
     vertical-align: top;
 }
 
-.gw2-form-table input[type="text"],
-.gw2-form-table input[type="number"],
-.gw2-form-table select {
-    width: 100%;
-    max-width: 400px;
+.gw2-event-ids-container tr.future-event {
+    background: #f8fff8;
 }
 
-.gw2-form-table .description {
-    margin-top: 5px;
-    color: #666;
-    font-style: italic;
-    font-size: 13px;
+.gw2-event-ids-container tr.past-event {
+    background: #fff8f8;
+    opacity: 0.7;
+}
+
+.gw2-event-ids-container .event-status {
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.future-event .event-status {
+    background: #d4edda;
+    color: #155724;
+}
+
+.past-event .event-status {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+
+
+/* Responsive Anpassungen für Event-ID-Tabelle */
+@media (max-width: 768px) {
+    .gw2-event-ids-container table {
+        font-size: 12px;
+    }
+    
+    .gw2-event-ids-container th,
+    .gw2-event-ids-container td {
+        padding: 6px 8px;
+    }
+    
+
+}
+
+/* Test Results Styling */
+.gw2-test-results {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gw2-test-results h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #23282d;
+}
+
+.gw2-test-result {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+}
+
+.gw2-test-result:last-child {
+    margin-bottom: 0;
+}
+
+.gw2-test-result strong {
+    color: #23282d;
+}
+
+.gw2-test-result .success {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.gw2-test-result .error {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.gw2-test-result code {
+    background-color: #f8f9fa;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 12px;
+    word-break: break-all;
 } 

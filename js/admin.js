@@ -1,138 +1,67 @@
 jQuery(document).ready(function($) {
     
-    // Admin Download Button Handler
-    $('#gw2-download-calendar').click(function() {
-        var button = $(this);
-        var status = $('#gw2-download-status');
-        
-        // Button deaktivieren und Loading-Status anzeigen
-        button.prop('disabled', true);
-        button.html('<span class="gw2-loading"></span>Lädt herunter...');
-        status.text('').removeClass('success error');
-        
-        // AJAX Request
+    // Event-ID-Liste laden
+    function loadEventIds() {
         $.ajax({
             url: gw2_admin_ajax.ajax_url,
             type: 'POST',
             data: {
-                action: 'download_calendar',
+                action: 'get_event_ids',
                 nonce: gw2_admin_ajax.nonce
             },
             success: function(response) {
                 if (response.success) {
-                    status.text(response.data).addClass('success');
-                    
-                    // Erfolgsmeldung nach 3 Sekunden ausblenden
-                    setTimeout(function() {
-                        status.text('').removeClass('success');
-                    }, 3000);
-                    
-                    // Optional: Seite neu laden um neue Events anzuzeigen
-                    if (typeof calendar !== 'undefined') {
-                        calendar.refetchEvents();
-                    }
+                    displayEventIds(response.data);
                 } else {
-                    status.text(response.data).addClass('error');
-                }
-            },
-            error: function(xhr, status, error) {
-                var errorMessage = 'Netzwerkfehler';
-                if (xhr.responseJSON && xhr.responseJSON.data) {
-                    errorMessage = xhr.responseJSON.data;
-                }
-                status.text(errorMessage).addClass('error');
-            },
-            complete: function() {
-                // Button wieder aktivieren
-                button.prop('disabled', false);
-                button.text('Kalender manuell herunterladen');
-            }
-        });
-    });
-    
-    // Toggle-Modus Button Handler
-    $('#gw2-toggle-mode').click(function() {
-        var button = $(this);
-        var status = $('#gw2-download-status');
-        
-        button.prop('disabled', true);
-        
-        $.ajax({
-            url: gw2_admin_ajax.ajax_url,
-            type: 'POST',
-            data: {
-                action: 'toggle_download_mode',
-                nonce: gw2_admin_ajax.nonce
-            },
-            success: function(response) {
-                if (response.success) {
-                    status.text(response.data).addClass('success');
-                    
-                    // Button-Text und Klasse aktualisieren
-                    if (button.text().includes('Manueller')) {
-                        button.text('Automatischer Modus').removeClass('button-secondary').addClass('button-primary');
-                    } else {
-                        button.text('Manueller Modus').removeClass('button-primary').addClass('button-secondary');
-                    }
-                    
-                    // Erfolgsmeldung nach 3 Sekunden ausblenden
-                    setTimeout(function() {
-                        status.text('').removeClass('success');
-                    }, 3000);
-                } else {
-                    status.text(response.data).addClass('error');
+                    $('#gw2-event-ids-list').html('<p class="error">Fehler beim Laden der Event-IDs.</p>');
                 }
             },
             error: function() {
-                status.text('Fehler beim Umschalten des Modus').addClass('error');
-            },
-            complete: function() {
-                button.prop('disabled', false);
+                $('#gw2-event-ids-list').html('<p class="error">Fehler beim Laden der Event-IDs.</p>');
             }
         });
-    });
+    }
     
-    // Status-Button für Debugging
-    $('#gw2-check-status').click(function() {
-        var button = $(this);
-        var status = $('#gw2-download-status');
+    // Event-IDs anzeigen
+    function displayEventIds(events) {
+        if (events.length === 0) {
+            $('#gw2-event-ids-list').html('<p>Keine Events mit IDs gefunden.</p>');
+            return;
+        }
         
-        button.prop('disabled', true);
-        button.text('Prüfe...');
+        var html = '<div class="gw2-event-ids-container">';
+        html += '<table class="widefat">';
+        html += '<thead><tr>';
+        html += '<th>Event-ID</th>';
+        html += '<th>Event-Titel</th>';
+        html += '<th>Datum & Zeit</th>';
+        html += '<th>Status</th>';
+        html += '<th>Shortcode</th>';
+        html += '</tr></thead>';
+        html += '<tbody>';
         
-        loadCacheInfo();
-        
-        $.ajax({
-            url: gw2_admin_ajax.ajax_url,
-            type: 'POST',
-            data: {
-                action: 'get_download_status',
-                nonce: gw2_admin_ajax.nonce
-            },
-            success: function(response) {
-                if (response.success) {
-                    var data = response.data;
-                    var statusText = 'Modus: ' + (data.use_manual_file ? 'Manuell' : 'Automatisch');
-                    statusText += ' | Cache-Datei: ' + (data.cache_file_exists ? 'Ja' : 'Nein');
-                    if (data.cache_file_exists) {
-                        statusText += ' (' + data.cache_file_size + ' Bytes, ' + new Date(data.cache_file_time * 1000).toLocaleString() + ')';
-                    }
-                    statusText += ' | Verzeichnis beschreibbar: ' + (data.cache_dir_writable ? 'Ja' : 'Nein');
-                    
-                    status.text(statusText).addClass('success').removeClass('error');
-                } else {
-                    status.text('Fehler beim Abrufen des Status').addClass('error');
-                }
-            },
-            error: function() {
-                status.text('Netzwerkfehler beim Status-Abruf').addClass('error');
-            },
-            complete: function() {
-                button.prop('disabled', false);
-                button.text('Status prüfen');
-            }
+        events.forEach(function(event) {
+            var statusClass = event.is_future ? 'future-event' : 'past-event';
+            var statusText = event.is_future ? 'Zukünftig' : 'Vergangen';
+            var shortcode = '[gw2_event_countdown event_id="' + event.id + '"]';
+            
+            html += '<tr class="' + statusClass + '">';
+            html += '<td><code>' + event.id + '</code></td>';
+            html += '<td>' + event.title + '</td>';
+            html += '<td>' + event.date + ' Uhr</td>';
+            html += '<td><span class="event-status">' + statusText + '</span></td>';
+            html += '<td><code>' + shortcode + '</code></td>';
+            html += '</tr>';
         });
-    });
+        
+        html += '</tbody></table>';
+
+        html += '</div>';
+        
+        $('#gw2-event-ids-list').html(html);
+    }
+    
+
     
     // Cache-Informationen laden
     function loadCacheInfo() {
@@ -145,74 +74,190 @@ jQuery(document).ready(function($) {
             },
             success: function(response) {
                 if (response.success) {
-                    var data = response.data;
-                    var html = '<table class="form-table">';
-                    html += '<tr><th>Download-Modus:</th><td>' + (data.use_manual_file ? 'Manuell' : 'Automatisch') + '</td></tr>';
-                    html += '<tr><th>Cache-Datei:</th><td>' + (data.cache_file_exists ? 'Vorhanden' : 'Nicht gefunden') + '</td></tr>';
-                    if (data.cache_file_exists) {
-                        html += '<tr><th>Dateigröße:</th><td>' + data.cache_file_size + ' Bytes</td></tr>';
-                        html += '<tr><th>Letzte Änderung:</th><td>' + new Date(data.cache_file_time * 1000).toLocaleString() + '</td></tr>';
-                    }
-                    html += '<tr><th>Cache-Verzeichnis:</th><td>' + (data.cache_dir_writable ? 'Beschreibbar' : 'Nicht beschreibbar') + '</td></tr>';
-                    html += '<tr><th>Dateipfad:</th><td><code>' + data.cache_file_path + '</code></td></tr>';
-                    html += '<tr><th>ICS-URL:</th><td><a href="' + data.ics_url + '" target="_blank"><code>' + data.ics_url + '</code></a></td></tr>';
-                    html += '</table>';
-                    
-                    $('#gw2-cache-info').html(html);
+                    displayCacheInfo(response.data);
                 } else {
-                    $('#gw2-cache-info').html('<p class="error">Fehler beim Laden der Cache-Informationen</p>');
+                    $('#gw2-cache-info').html('<p class="error">Fehler beim Laden der Cache-Informationen.</p>');
                 }
             },
             error: function() {
-                $('#gw2-cache-info').html('<p class="error">Netzwerkfehler beim Laden der Cache-Informationen</p>');
+                $('#gw2-cache-info').html('<p class="error">Fehler beim Laden der Cache-Informationen.</p>');
             }
         });
     }
     
-    // Cache-Informationen beim Laden der Seite abrufen
-    loadCacheInfo();
+    // Cache-Informationen anzeigen
+    function displayCacheInfo(data) {
+        var html = '<table class="widefat">';
+        html += '<tr><td><strong>Cache-Datei existiert:</strong></td><td>' + (data.cache_file_exists ? 'Ja' : 'Nein') + '</td></tr>';
+        
+        if (data.cache_file_exists) {
+            html += '<tr><td><strong>Dateigröße:</strong></td><td>' + formatBytes(data.cache_file_size) + '</td></tr>';
+            html += '<tr><td><strong>Letzte Änderung:</strong></td><td>' + new Date(data.cache_file_time * 1000).toLocaleString('de-DE') + '</td></tr>';
+        }
+        
+        html += '<tr><td><strong>Cache-Verzeichnis beschreibbar:</strong></td><td>' + (data.cache_dir_writable ? 'Ja' : 'Nein') + '</td></tr>';
+        html += '<tr><td><strong>Modus:</strong></td><td>' + (data.use_manual_file ? 'Manuell' : 'Automatisch') + '</td></tr>';
+        html += '<tr><td><strong>Download-URL:</strong></td><td><a href="' + data.download_url + '" target="_blank">' + data.download_url + '</a></td></tr>';
+        html += '<tr><td><strong>Cache-Datei Pfad:</strong></td><td><code>' + data.cache_file_path + '</code></td></tr>';
+        html += '</table>';
+        
+        $('#gw2-cache-info').html(html);
+    }
     
-    // ICS-Datei Upload Handler
+    // Bytes formatieren
+    function formatBytes(bytes) {
+        if (bytes === 0) return '0 Bytes';
+        var k = 1024;
+        var sizes = ['Bytes', 'KB', 'MB', 'GB'];
+        var i = Math.floor(Math.log(bytes) / Math.log(k));
+        return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+    }
+    
+    // Kalender herunterladen
+    $('#gw2-download-calendar').click(function() {
+        var button = $(this);
+        var originalText = button.text();
+        
+        button.prop('disabled', true).text('Lädt herunter...');
+        $('#gw2-download-status').removeClass('success error').text('');
+        
+        $.ajax({
+            url: gw2_admin_ajax.ajax_url,
+            type: 'POST',
+            data: {
+                action: 'download_calendar',
+                nonce: gw2_admin_ajax.nonce
+            },
+            success: function(response) {
+                if (response.success) {
+                    $('#gw2-download-status').addClass('success').text(response.data);
+                    loadCacheInfo();
+                    loadEventIds();
+                } else {
+                    $('#gw2-download-status').addClass('error').text(response.data);
+                }
+            },
+            error: function() {
+                $('#gw2-download-status').addClass('error').text('Fehler beim Herunterladen.');
+            },
+            complete: function() {
+                button.prop('disabled', false).text(originalText);
+            }
+        });
+    });
+    
+    // Modus umschalten
+    $('#gw2-toggle-mode').click(function() {
+        var button = $(this);
+        var originalText = button.text();
+        
+        button.prop('disabled', true);
+        
+        $.ajax({
+            url: gw2_admin_ajax.ajax_url,
+            type: 'POST',
+            data: {
+                action: 'toggle_download_mode',
+                nonce: gw2_admin_ajax.nonce
+            },
+            success: function(response) {
+                if (response.success) {
+                    location.reload();
+                } else {
+                    alert('Fehler beim Umschalten des Modus.');
+                }
+            },
+            error: function() {
+                alert('Fehler beim Umschalten des Modus.');
+                button.prop('disabled', false).text(originalText);
+            }
+        });
+    });
+    
+    // Status prüfen
+    $('#gw2-check-status').click(function() {
+        loadCacheInfo();
+        loadEventIds();
+    });
+    
+    // Download-URLs testen
+    $('#gw2-test-urls').click(function() {
+        var button = $(this);
+        var originalText = button.text();
+        
+        button.prop('disabled', true).text('Teste URLs...');
+        $('#gw2-download-status').removeClass('success error').text('');
+        
+        $.ajax({
+            url: gw2_admin_ajax.ajax_url,
+            type: 'POST',
+            data: {
+                action: 'test_download_url',
+                nonce: gw2_admin_ajax.nonce
+            },
+            success: function(response) {
+                if (response.success) {
+                    var results = response.data;
+                    var statusHtml = '<div class="gw2-test-results">';
+                    statusHtml += '<h4>Download-URL Test Ergebnisse:</h4>';
+                    
+                    for (var url in results) {
+                        var result = results[url];
+                        statusHtml += '<div class="gw2-test-result">';
+                        statusHtml += '<strong>URL:</strong> <a href="' + url + '" target="_blank">' + url + '</a><br>';
+                        
+                        if (result.success) {
+                            statusHtml += '<span class="success">✓ Erfolgreich</span><br>';
+                            statusHtml += '<strong>Status Code:</strong> ' + result.status_code + '<br>';
+                            statusHtml += '<strong>Content Length:</strong> ' + result.content_length + ' Bytes<br>';
+                            statusHtml += '<strong>Content Type:</strong> ' + (result.content_type || 'Nicht angegeben') + '<br>';
+                            statusHtml += '<strong>Gültige ICS:</strong> ' + (result.is_valid_ics ? 'Ja' : 'Nein') + '<br>';
+                            if (result.body_preview) {
+                                statusHtml += '<strong>Vorschau:</strong> <code>' + result.body_preview + '</code><br>';
+                            }
+                        } else {
+                            statusHtml += '<span class="error">✗ Fehlgeschlagen</span><br>';
+                            if (result.error) {
+                                statusHtml += '<strong>Fehler:</strong> ' + result.error + '<br>';
+                            }
+                            if (result.status_code) {
+                                statusHtml += '<strong>Status Code:</strong> ' + result.status_code + '<br>';
+                            }
+                        }
+                        statusHtml += '</div>';
+                    }
+                    statusHtml += '</div>';
+                    
+                    $('#gw2-download-status').addClass('success').html(statusHtml);
+                } else {
+                    $('#gw2-download-status').addClass('error').text('Fehler beim Testen der URLs.');
+                }
+            },
+            error: function() {
+                $('#gw2-download-status').addClass('error').text('Fehler beim Testen der URLs.');
+            },
+            complete: function() {
+                button.prop('disabled', false).text(originalText);
+            }
+        });
+    });
+    
+    // ICS-Datei Upload
     $('#gw2-upload-form').submit(function(e) {
         e.preventDefault();
         
-        var form = $(this);
-        var button = $('#gw2-upload-button');
-        var status = $('#gw2-upload-status');
-        var fileInput = $('#ics_file')[0];
-        
-        // Prüfe ob Datei ausgewählt wurde
-        if (!fileInput.files || fileInput.files.length === 0) {
-            status.text('Bitte wählen Sie eine ICS-Datei aus.').addClass('error').removeClass('success');
-            return;
-        }
-        
-        // Prüfe Dateityp
-        var fileName = fileInput.files[0].name;
-        if (!fileName.toLowerCase().endsWith('.ics')) {
-            status.text('Bitte wählen Sie eine .ics Datei aus.').addClass('error').removeClass('success');
-            return;
-        }
-        
-        // Prüfe Dateigröße (max 5MB)
-        if (fileInput.files[0].size > 5 * 1024 * 1024) {
-            status.text('Die Datei ist zu groß. Maximale Größe: 5MB').addClass('error').removeClass('success');
-            return;
-        }
-        
-        // Button deaktivieren und Loading-Status anzeigen
-        button.prop('disabled', true);
-        $('.gw2-upload-text').hide();
-        $('.gw2-upload-loading').show();
-        status.text('').removeClass('success error');
-        
-        // FormData für AJAX-Upload erstellen
-        var formData = new FormData();
+        var formData = new FormData(this);
         formData.append('action', 'upload_ics_file');
         formData.append('nonce', gw2_admin_ajax.nonce);
-        formData.append('ics_file', fileInput.files[0]);
         
-        // AJAX Upload
+        var button = $('#gw2-upload-button');
+        var originalText = button.find('.gw2-upload-text').text();
+        
+        button.prop('disabled', true);
+        button.find('.gw2-upload-text').hide();
+        button.find('.gw2-upload-loading').show();
+        $('#gw2-upload-status').removeClass('success error').text('');
+        
         $.ajax({
             url: gw2_admin_ajax.ajax_url,
             type: 'POST',
@@ -221,34 +266,23 @@ jQuery(document).ready(function($) {
             contentType: false,
             success: function(response) {
                 if (response.success) {
-                    status.text(response.data).addClass('success').removeClass('error');
-                    
-                    // Form zurücksetzen
-                    form[0].reset();
-                    
-                    // Cache-Informationen aktualisieren
+                    $('#gw2-upload-status').addClass('success').text(response.data);
                     loadCacheInfo();
-                    
-                    // Erfolgsmeldung nach 5 Sekunden ausblenden
+                    loadEventIds();
                     setTimeout(function() {
-                        status.text('').removeClass('success');
-                    }, 5000);
+                        location.reload();
+                    }, 2000);
                 } else {
-                    status.text(response.data).addClass('error').removeClass('success');
+                    $('#gw2-upload-status').addClass('error').text(response.data);
                 }
             },
-            error: function(xhr, status, error) {
-                var errorMessage = 'Netzwerkfehler beim Upload';
-                if (xhr.responseJSON && xhr.responseJSON.data) {
-                    errorMessage = xhr.responseJSON.data;
-                }
-                $('#gw2-upload-status').text(errorMessage).addClass('error').removeClass('success');
+            error: function() {
+                $('#gw2-upload-status').addClass('error').text('Fehler beim Hochladen.');
             },
             complete: function() {
-                // Button wieder aktivieren
                 button.prop('disabled', false);
-                $('.gw2-upload-text').show();
-                $('.gw2-upload-loading').hide();
+                button.find('.gw2-upload-text').show();
+                button.find('.gw2-upload-loading').hide();
             }
         });
     });
@@ -257,57 +291,42 @@ jQuery(document).ready(function($) {
     $('#gw2-settings-form').submit(function(e) {
         e.preventDefault();
         
-        var form = $(this);
         var button = $('#gw2-save-settings');
-        var status = $('#gw2-settings-status');
-        var saveText = button.find('.gw2-save-text');
-        var saveLoading = button.find('.gw2-save-loading');
+        var originalText = button.find('.gw2-save-text').text();
         
-        // Button-Status ändern
-        saveText.hide();
-        saveLoading.show();
         button.prop('disabled', true);
-        status.removeClass('success error').text('');
-        
-        // Formulardaten sammeln
-        var formData = new FormData();
-        formData.append('action', 'save_calendar_settings');
-        formData.append('nonce', gw2_admin_ajax.nonce);
-        formData.append('week_start', $('#week_start').val());
-        formData.append('custom_css', $('#custom_css').val());
+        button.find('.gw2-save-text').hide();
+        button.find('.gw2-save-loading').show();
+        $('#gw2-settings-status').removeClass('success error').text('');
         
         $.ajax({
             url: gw2_admin_ajax.ajax_url,
-            method: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,
+            type: 'POST',
+            data: {
+                action: 'save_calendar_settings',
+                nonce: gw2_admin_ajax.nonce,
+                week_start: $('#week_start').val(),
+                custom_css: $('#custom_css').val()
+            },
             success: function(response) {
                 if (response.success) {
-                    status.text(response.data).addClass('success').removeClass('error');
+                    $('#gw2-settings-status').addClass('success').text(response.data);
                 } else {
-                    status.text(response.data || 'Fehler beim Speichern der Einstellungen.').addClass('error').removeClass('success');
+                    $('#gw2-settings-status').addClass('error').text(response.data);
                 }
             },
-            error: function(xhr, status, error) {
-                status.text('Netzwerkfehler beim Speichern der Einstellungen.').addClass('error').removeClass('success');
-                console.error('Einstellungen speichern Fehler:', error);
+            error: function() {
+                $('#gw2-settings-status').addClass('error').text('Fehler beim Speichern der Einstellungen.');
             },
             complete: function() {
-                // Button-Status zurücksetzen
-                saveText.show();
-                saveLoading.hide();
                 button.prop('disabled', false);
+                button.find('.gw2-save-text').show();
+                button.find('.gw2-save-loading').hide();
             }
         });
     });
     
-    // Keyboard Shortcuts für Admins
-    $(document).keydown(function(e) {
-        // Ctrl+Shift+R für manuellen Download
-        if (e.ctrlKey && e.shiftKey && e.keyCode === 82) {
-            e.preventDefault();
-            $('#gw2-download-calendar').click();
-        }
-    });
+    // Initial laden
+    loadCacheInfo();
+    loadEventIds();
 }); 

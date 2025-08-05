@@ -1,0 +1,2241 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//InvisionCommunity Events 4.7.22//EN
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+REFRESH-INTERVAL:PT15M
+X-PUBLISHED-TTL:PT15M
+X-WR-CALNAME:Alle Kalender - Guild Wars 2 Foren
+NAME:Alle Kalender - Guild Wars 2 Foren
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:20250330T020000Z
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:20251026T020000Z
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:20240331T020000Z
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:20241027T020000Z
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Banklagerplatz-Erweiterungen und mehr
+DTSTAMP:20250805T161323Z
+SEQUENCE:0
+UID:174-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 12. August gibt es im Edelsteinshop von Guild War
+	s 2 20 % Rabatt auf Banklagerplatz-Erweiterungen und alle Salon-Dauerpäss
+	e!\n\n
+DTSTART:20250805T160000Z
+DTEND:20250812T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20% Rabatt auf unendliche Bergungssätze und mehr
+DTSTAMP:20250722T162112Z
+SEQUENCE:0
+UID:173-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 29. Juli erhaltet ihr im Guild Wars 2 Edelstein-S
+	hop 20% Rabatt auf unendliche Bergungssätze\, Ausrüstungsvorlagen und Er
+	weiterungen!\n\n
+DTSTART:20250722T160000Z
+DTEND:20250729T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Livestream: Elite-Spezialisierungen 7–9
+DTSTAMP:20250721T212819Z
+SEQUENCE:0
+UID:172-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Livestream: Schalten Sie am Donnerstag\, den 8. August\, 
+	um 12:00 Uhr PDT (UTC -7) auf twitch.tv/guildwars2 ein\, um mehr über die
+	 Elite-Spezialisierungen 7–9 in Guild Wars 2: Visions of Eternity zu erf
+	ahren!\n\n
+DTSTART;VALUE=DATE:20250807
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Blog und Video: Elite-Spezialisierungen 7–9
+DTSTAMP:20250721T212616Z
+SEQUENCE:0
+UID:171-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Blog und Video: Besuchen Sie guildwars2.com\, um einen au
+	sführlichen Blogbeitrag zu lesen und ein spezielles Video zu den Elite-Sp
+	ezialisierungen 7–9 in Guild Wars 2: Visions of Eternity anzusehen!\n\n
+		 \n\n
+DTSTART;VALUE=DATE:20250805
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Livestream: Elite-Spezialisierungen 4–6
+DTSTAMP:20250721T212353Z
+SEQUENCE:0
+UID:170-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Livestream: Schalten Sie am Donnerstag\, den 1. August\, 
+	um 12:00 Uhr PDT (UTC -7) auf twitch.tv/guildwars2 ein\, um mehr über die
+	 Elite-Spezialisierungen 4–6 in Guild Wars 2: Visions of Eternity zu erf
+	ahren!\n\n
+DTSTART;VALUE=DATE:20250731
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Blog und Video: Elite-Spezialisierungen 4–6
+DTSTAMP:20250721T212207Z
+SEQUENCE:0
+UID:169-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Blog und Video: Besuchen Sie guildwars2.com\, um einen au
+	sführlichen Blogbeitrag zu lesen und ein spezielles Video zu den Elite-Sp
+	ezialisierungen 4–6 in Guild Wars 2: Visions of Eternity anzusehen!\n\n
+DTSTART;VALUE=DATE:20250729
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Livestream: Elite-Spezialisierungen 1–3
+DTSTAMP:20250721T211918Z
+SEQUENCE:0
+UID:168-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	 \n\n\n\n	Livestream: Schalten Sie am Donnerstag\, den 2
+	5. Juli\, um 12:00 Uhr PDT (UTC -7) auf twitch.tv/guildwars2 ein\, um mehr
+	 über die Elite-Spezialisierungen 1–3 in Guild Wars 2: Visions of Etern
+	ity zu erfahren!\n\n
+DTSTART;VALUE=DATE:20250724
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Blog und Video: Elite-Spezialisierungen 1–3
+DTSTAMP:20250721T211559Z
+SEQUENCE:0
+UID:167-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	 \n\n\n\n	Blog and Video: Visit guildwars2.com to read 
+	a detailed blog post and watch a special video on Elite Specializations 1-
+	3 in Guild Wars 2: Visions of Eternity!\n\n
+DTSTART;VALUE=DATE:20250722
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Spielvorschau: Elite-Spezialisierungen
+DTSTAMP:20250721T202839Z
+SEQUENCE:0
+UID:166-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Spielvorschau: Testet die neuen Elite-Spezialisierungen v
+	on Guild Wars 2: Visions of Eternity vom 20. bis 27. August in der offenen
+	 Beta!\n\n
+DTSTART;VALUE=DATE:20250819
+DTEND;VALUE=DATE:20250827
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Twitch Drops
+DTSTAMP:20250715T161020Z
+SEQUENCE:0
+UID:165-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Zur Feier der Ankündigung der neuen Erweiterung Guild W
+	ars 2: Visions of Eternity bieten wir Twitch Drops!\n\n	 \n\n	Von 15. Ju
+	li um 18 Uhr MESZ (9 Uhr PST) bis 18. Juli um 8:59 Uhr MESZ (17. Juli 23:5
+	9 Uhr PST) könnt ihr euch eine Ingame-Belohnung für Guild Wars 2 verdien
+	en\, indem ihr euch einen Twitch-Kanal anseht\, der Guild Wars 2 zeigt.\
+	n\n	 \n\n	Belohnung: Erfinder-Sonnenbrille\, „/Zischen“-Emote und Rit
+	ualisten-Kleidungsset\n\n
+DTSTART:20250715T160000Z
+DTEND:20250718T065900Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ab 28. Oktober – Guild Wars 2: Visions of Eternity
+DTSTAMP:20250715T161017Z
+SEQUENCE:0
+UID:164-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	 \n\n\n\n	Neue Elite-Spezialisierungen\n\n	Neue Schweber
+	ochen-Beherrschungen\n\n	Schlachtzüge- und Kampf-Updates\n\n	Sechs neue l
+	egendäre Waffen*\n\n	Eine neue Heimstatt-Karte\n\n	Heimstatt-Layouts\n\n	
+	Vorverkaufsboni ab sofort verfügbar\n\n\n\n	Castora wartet auf euch – a
+	lle Details findet ihr hier.\n\n\n\n	\n\n	*Eines davon ist der Wasser-Atme
+	r\n\n
+DTSTART;VALUE=DATE:20251027
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Schwarzlöwen-Aufwertungsticket auf Stufe 80
+	 und alle Staffeln und Episoden der Lebendigen Welt
+DTSTAMP:20250708T162414Z
+SEQUENCE:0
+UID:163-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 15. Juli gibt es jetzt im Edelsteinshop von Guild
+	 Wars 2 20 % Rabatt auf Schwarzlöwen-Aufwertungstickets auf Stufe 80 sowi
+	e alle Staffeln und Episoden der Lebendigen Welt!\n\n
+DTSTART:20250708T160000Z
+DTEND:20250715T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Taschenplatz-Erweiterung
+DTSTAMP:20250701T160646Z
+SEQUENCE:0
+UID:162-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 13. Mai gibt es im Edelsteinshop von Guild Wars 2
+	 20 % Rabatt auf Taschenplatz-Erweiterung!\n\n
+DTSTART:20250701T160000Z
+DTEND:20250708T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Charakterplatz-Erweiterung
+DTSTAMP:20250624T160752Z
+SEQUENCE:0
+UID:161-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 1. Juli gibt es im Edelsteinshop von Guild Wars 2
+	 20 % Rabatt auf Charakterplatz-Erweiterungen!\n\n
+DTSTART:20250624T160000Z
+DTEND:20250701T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Gemeinsamer Inventarplatz
+DTSTAMP:20250617T162613Z
+SEQUENCE:0
+UID:160-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 24. Juni gibt es im Edelsteinshop von Guild Wars 
+	2 20 % Rabatt auf Gemeinsamer Inventarplatz!\n\n
+DTSTART:20250617T160000Z
+DTEND:20250624T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Banklagerplatz-Erweiterungen und mehr
+DTSTAMP:20250610T193352Z
+SEQUENCE:0
+UID:159-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 17. Juni gibt es im Edelsteinshop von Guild Wars 
+	2 20 % Rabatt auf Banklagerplatz-Erweiterungen und alle Salon-Dauerpässe!
+	\n\n
+DTSTART:20250610T160000Z
+DTEND:20250617T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Materiallager-Erweiterungen und mehr
+DTSTAMP:20250603T161628Z
+SEQUENCE:0
+UID:158-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 10. Juni gibt es jetzt im Edelsteinshop von Guild
+	 Wars 2 20 % Rabatt auf Materiallager-Erweiterung\, Wiederaufladender Tele
+	port zum Freund\, Schwarzlöwen-Expeditionstafel-Vertrag und Schwarzlöwen
+	-Gartenbeet-Urkunde!\n\n
+DTSTART:20250603T160000Z
+DTEND:20250610T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ab dem 3. Juni gibt es Twitch Drops 
+DTSTAMP:20250527T190245Z
+SEQUENCE:0
+UID:157-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Vom 3. bis 8. Juni solltet ihr euren Lieblingsstreamern m
+	it Guild Wars 2-Inhalten zusehen\, um Belohnungen wie Händler-Paket\, B
+	lutstein-Aszendierer\, Blutstein-Felsbrocken und Blutstein-Gleitschirm zu 
+	erhalten. Seht insgesamt 6 Stunden zu\, um alles zu erhalten!\n\n
+DTSTART:20250603T160000Z
+DTEND:20250609T065900Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:40 % Rabatt auf Build-Vorlagen-Erweiterungen
+DTSTAMP:20250527T170044Z
+SEQUENCE:0
+UID:156-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 3. Juni gibt es jetzt im Edelsteinshop von Guild 
+	Wars 2 40 % Rabatt auf Build-Vorlagen-Erweiterungen!\n\n
+DTSTART:20250527T160000Z
+DTEND:20250603T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Unendliche Wiederverwertungskits und mehr
+DTSTAMP:20250527T165949Z
+SEQUENCE:0
+UID:155-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 3. Juni erhaltet ihr im Edelsteinshop von Guild W
+	ars 2 20 % Rabatt auf unendliche Wiederverwertungskits und Ausrüstungs-Vo
+	rlagen-Erweiterungen!\n\n
+DTSTART:20250527T160000Z
+DTEND:20250603T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fest der Vier Winde
+DTSTAMP:20250527T131610Z
+SEQUENCE:0
+UID:154-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	5. August–26. August – Fest der Vier Winde\n\n
+DTSTART:20250805T160000Z
+DTEND:20250826T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:PvP-Beta-Event: „Vorstoß“ 3
+DTSTAMP:20250527T131558Z
+SEQUENCE:0
+UID:153-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	5. August–12. August – PvP-Beta-Event: „Vorstoß
+	“ 3\n\n
+DTSTART;VALUE=DATE:20250804
+DTEND;VALUE=DATE:20250812
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „WvW-Ansturm“
+DTSTAMP:20250527T131547Z
+SEQUENCE:0
+UID:152-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	22. Juli–29. Juli – Bonus-Event „WvW-Ansturm“\n\
+	n
+DTSTART:20250722T070000Z
+DTEND:20250729T070000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Event „Rückkehr zu Secrets of the Obscure“
+DTSTAMP:20250527T131523Z
+SEQUENCE:0
+UID:151-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	15. Juli–29. Juli – Event „Rückkehr zu Secret
+	s of the Obscure“\n\n
+DTSTART:20250715T160000Z
+DTEND:20250729T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:(Termin folgt) – Ankündigung der Erweiterung
+DTSTAMP:20250527T131106Z
+SEQUENCE:0
+UID:150-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Termin folgt!  👀\n\n
+DTSTART;VALUE=DATE:20250630
+DTEND;VALUE=DATE:20250731
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fertigkeiten- und Spielbalance-Update\, Herausforderungsmodu
+	s für Sippenfall-Fraktal
+DTSTAMP:20250527T131103Z
+SEQUENCE:0
+UID:149-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	24. Juni – Fertigkeiten- und Spielbalance-Update\, Her
+	ausforderungsmodus für Sippenfall-Fraktal\n\n
+DTSTART;VALUE=DATE:20250623
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Drachen-Gepolter
+DTSTAMP:20250527T131100Z
+SEQUENCE:0
+UID:148-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	17. Juni–8. Juli – Drachen-Gepolter\n\n
+DTSTART:20250617T160000Z
+DTEND:20250708T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Guild Wars 2: Janthir Wilds – „Vergebung“
+DTSTAMP:20250527T131056Z
+SEQUENCE:0
+UID:147-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Guild Wars 2: Janthir Wilds – „Vergebung“\n\n
+DTSTART;VALUE=DATE:20250602
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Transmutation-Ladungen\, Komplettes Umstyli
+	ngkit und mehr
+DTSTAMP:20250520T155936Z
+SEQUENCE:0
+UID:146-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 27. Mai gibt es im Edelsteinshop 20 % Rabatt au
+	f Transmutation-Ladungen\, Komplettes Umstylingkit\, Frisierkit\, Vertrag 
+	zur Namensänderung und Schwarzlöwen-Truhenschlüssel!\n\n\n\n	 \n\n
+DTSTART:20250520T160000Z
+DTEND:20250527T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Schwarzlöwen-Aufwertungsticket auf Stufe 80
+	 und alle Staffeln und Episoden der Lebendigen Welt
+DTSTAMP:20250513T161003Z
+SEQUENCE:0
+UID:145-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 20. Mai gibt es jetzt im Edelsteinshop von Guild 
+	Wars 2 20 % Rabatt auf Schwarzlöwen-Aufwertungstickets auf Stufe 80 sowie
+	 alle Staffeln und Episoden der Lebendigen Welt!\n\n
+DTSTART:20250513T160000Z
+DTEND:20250520T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Taschenplatz-Erweiterung
+DTSTAMP:20250507T175159Z
+SEQUENCE:0
+UID:144-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 13. Mai gibt es im Edelsteinshop von Guild Wars 2
+	 20 % Rabatt auf Taschenplatz-Erweiterung!\n\n
+DTSTART:20250506T160000Z
+DTEND:20250513T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Gemeinsame Inventarplätze
+DTSTAMP:20250422T170328Z
+SEQUENCE:0
+UID:143-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 29. April gibt es im Edelsteinshop von Guild Wars
+	 2 20 % Rabatt auf Gemeinsamer Inventarplatz!\n\n
+DTSTART:20250422T160000Z
+DTEND:20250429T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Bank-Registerkarte und alle Salon-Dauerpäss
+	e
+DTSTAMP:20250416T140415Z
+SEQUENCE:0
+UID:142-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 22. April gibt es im Edelsteinshop von Guild Wars
+	 2 20 % Rabatt auf Banklagerplatz-Erweiterungen und alle Salon-Dauerpässe
+	!\n\n
+DTSTART:20250415T160000Z
+DTEND:20250422T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Materialienlager-Erweiterung und mehr
+DTSTAMP:20250408T162111Z
+SEQUENCE:0
+UID:141-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 15. April gibt es jetzt im Edelsteinshop von Guil
+	d Wars 2 20 % Rabatt auf Materialienlager-Erweiterung\, Wiederaufladender 
+	Teleport zum Freund\, Schwarzlöwen-Expeditionstafel-Vertag und Schwarzlö
+	wen-Gartenbeet-Urkunde!\n\n
+DTSTART:20250408T160000Z
+DTEND:20250415T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:40 % Rabatt auf Build-Vorlagen-Erweiterungen
+DTSTAMP:20250401T164731Z
+SEQUENCE:0
+UID:140-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 8. April gibt es jetzt im Edelsteinshop von Guil
+	d Wars 2 40 % Rabatt auf Build-Vorlagen-Erweiterungen!\n\n
+DTSTART:20250401T160000Z
+DTEND:20250408T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Unendliche Wiederverwertungskits und mehr
+DTSTAMP:20250401T164611Z
+SEQUENCE:0
+UID:139-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 8. April erhaltet ihr im Edelsteinshop von Guild 
+	Wars 2 20 % Rabatt auf unendliche Wiederverwertungskits und Ausrüstungs-V
+	orlagen-Erweiterungen!\n\n
+DTSTART:20250401T160000Z
+DTEND:20250408T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:25 % Rabatt auf ausgewählte Charakter- und Account-Aufwert
+	ungen
+DTSTAMP:20250325T160522Z
+SEQUENCE:0
+UID:138-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 1. April gibt es im Edelsteinshop von Guild Wars 
+	2 25 % Rabatt auf ausgewählte Charakter- und Account-Aufwertungen!\n\n
+DTSTART:20250325T160000Z
+DTEND:20250401T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:25 % Rabatt auf ausgewählte einzigartige Rüstungs-Skins u
+	nd Stühle
+DTSTAMP:20250318T162141Z
+SEQUENCE:0
+UID:137-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 25. März gibt es im Edelsteinshop von Guild Wars
+	 2 25 % Rabatt ausgewählte einzigartige Rüstungs-Skins und Stühle!\n\n
+DTSTART:20250318T160000Z
+DTEND:20250325T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Begrüßt den Frühling mit den Frühjahrsangeboten für Gui
+	ld Wars 2!
+DTSTAMP:20250313T171608Z
+SEQUENCE:0
+UID:136-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Der Frühling ist da\, und mit ihm kommen die Frühjahrsa
+	ngebote für Guild Wars 2®! Vom 13. März 18 Uhr MEZ (10 Uhr PT) bis zum 
+	20. März 17:59 Uhr MEZ (9:59 Uhr PT) könnt ihr neue Abenteuer erleben mi
+	t Sonderangeboten auf Guild Wars 2-Erweiterungen. Alle Details findet ihr 
+	hier.\n\n
+DTSTART:20250313T170000Z
+DTEND:20250320T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:25 % Rabatt auf ausgewählte Reittier-Skins\, Farbkits und 
+	mehr
+DTSTAMP:20250311T162543Z
+SEQUENCE:0
+UID:135-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 18. März gibt es im Edelsteinshop von Guild Wars
+	 2 25 % Rabatt auf ausgewählte Reittier-Skins\, Farbkits und Extra-Gegens
+	tände!\n\n
+DTSTART:20250311T160000Z
+DTEND:20250318T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Twitch Drops
+DTSTAMP:20250310T230238Z
+SEQUENCE:0
+UID:134-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Wir feiern die Veröffentlichung von \"Repentance\" mit T
+	witch Drops\, die am 11. März um 9:00 Uhr Pazifischer Zeit beginnen! Besu
+	cht unsere Twitch Drops-Seite für alle Details und um euren Guild Wars 2-
+	Account zu verknüpfen.\n\n
+DTSTART;VALUE=DATE:20250310
+DTEND;VALUE=DATE:20250316
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:25 % Rabatt auf ausgewählte Rucksäcke und 25 % Rabatt auf 
+	ausgewählte Gleitschirme
+DTSTAMP:20250305T154152Z
+SEQUENCE:0
+UID:133-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Ab sofort bis zum 11. März erhaltet ihr 25 % Rabatt auf 
+	ausgewählte Rucksäcke und 25 % Rabatt auf ausgewählte Gleitschirme im G
+	uild Wars 2-Edelsteinshop!\n\n
+DTSTART:20250305T170000Z
+DTEND:20250311T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Beta „PvP-Vorstoß“ und Bonus-Event „Ansturm“
+DTSTAMP:20250304T140838Z
+SEQUENCE:0
+UID:132-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Beta „PvP-Vorstoß“ und Bonus-Event „Ansturm“\n\n
+DTSTART;VALUE=DATE:20250519
+DTEND;VALUE=DATE:20250527
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Rollkäfer-Rennen“
+DTSTAMP:20250304T140835Z
+SEQUENCE:0
+UID:131-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bonus-Event „Rollkäfer-Rennen“\n\n
+DTSTART:20250513T160000Z
+DTEND:20250520T190000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Rückkehr zu End of Dragons“
+DTSTAMP:20250304T140832Z
+SEQUENCE:0
+UID:130-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bonus-Event „Rückkehr zu End of Dragons“\n\n
+DTSTART:20250506T160000Z
+DTEND:20250520T190000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WvW-Bonus-Event „Kein angeschlagener Zustand“
+DTSTAMP:20250304T140827Z
+SEQUENCE:0
+UID:129-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	WvW-Bonus-Event „Kein angeschlagener Zustand“\n\n
+DTSTART;VALUE=DATE:20250424
+DTEND;VALUE=DATE:20250502
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fertigkeiten- und Spielbalance-Update
+DTSTAMP:20250304T140823Z
+SEQUENCE:0
+UID:128-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Fertigkeiten- und Spielbalance-Update\n\n
+DTSTART;VALUE=DATE:20250414
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Super Adventure Festival
+DTSTAMP:20250304T140818Z
+SEQUENCE:0
+UID:127-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Super Adventure Festival\n\n
+DTSTART:20250415T160000Z
+DTEND:20250506T190000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Verlies-Ansturm“
+DTSTAMP:20250304T140813Z
+SEQUENCE:0
+UID:126-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bonus-Event „Verlies-Ansturm“\n\n
+DTSTART:20250408T160000Z
+DTEND:20250415T190000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Legendärer Modus für Ura-Schlachtzug und WvW-Spielkomfort-
+	Updates
+DTSTAMP:20250304T140806Z
+SEQUENCE:0
+UID:125-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Legendärer Modus für Ura-Schlachtzug und WvW-Spielkomfo
+	rt-Updates\n\n
+DTSTART;VALUE=DATE:20250324
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Guild Wars 2: Janthir Wilds: „Reue“
+DTSTAMP:20250304T140800Z
+SEQUENCE:0
+UID:124-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Erlebt am 11. März alte Geheimnisse. Seid bereit\, wenn 
+	die Vergangenheit in unserem nächsten großen Update zurückkehrt!\n\n
+DTSTART;VALUE=DATE:20250310
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event: Fraktal-Ansturm
+DTSTAMP:20250219T201553Z
+SEQUENCE:0
+UID:123-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Das Bonus-Event „Fraktal-Ansturm“ läuft vom 25. Febr
+	uar bis 4. März und bietet den Erfolg „Fraktal-Ansturm-Champion“\, de
+	r mit Bonus-Belohnungen und Astralem Ruhm einhergeht. Haltet zum Beginn de
+	s Events in eurer Ingame-Post Ausschau nach einer Nachricht des Konsortium
+	s\, die weitere Informationen enthält!\n\n
+DTSTART;VALUE=DATE:20250224
+DTEND;VALUE=DATE:20250304
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Banklagerplatz-Erweiterungen und alle Salon-
+	Dauerpässe
+DTSTAMP:20250218T184345Z
+SEQUENCE:0
+UID:122-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 25. Februar gibt es im Edelsteinshop von Guild Wa
+	rs 2 20 % Rabatt auf Banklagerplatz-Erweiterungen und alle Salon-Dauerpäs
+	se!\n\n
+DTSTART:20250218T170000Z
+DTEND:20250225T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Materialienlager-Erweiterung und mehr
+DTSTAMP:20250211T171205Z
+SEQUENCE:0
+UID:121-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 18. Februar gibt es jetzt im Edelsteinshop von Gu
+	ild Wars 2 20 % Rabatt auf Materialienlager-Erweiterung\, Wiederaufladende
+	r Teleport zum Freund\, Schwarzlöwen-Expeditionstafel-Vertag und Schwarz
+	löwen-Gartenbeet-Urkunde!\n\n
+DTSTART:20250211T170000Z
+DTEND:20250218T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Valentinstag-Gegenstände
+DTSTAMP:20250211T171111Z
+SEQUENCE:0
+UID:120-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 18. Februar gibt es jetzt im Edelsteinshop von Gu
+	ild Wars 2 20 % Rabatt auf ausgewählte Gegenstände\, die mit dem Valenti
+	nstag zu tun haben!\n\n
+DTSTART:20250211T170000Z
+DTEND:20250218T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „WvW-Ansturm“
+DTSTAMP:20250206T180602Z
+SEQUENCE:0
+UID:119-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Das Bonus-Event „WvW-Ansturm“ läuft von 18. bis 25. 
+	Februar. Spielt während der Event-Woche WvW\, um zusätzliche Belohnungen
+	 und Erfolge zu erhalten! Ihr erhaltet Ingame-Post mit Anweisungen zur Tei
+	lnahme\, wenn das Event beginnt\, und vergesst nicht\, euch ab 18. Februar
+	 die Erfolge-Kategorie „Bonus-Events“ im Spiel anzusehen.\n\n
+DTSTART:20250218T080000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:40 % Rabatt auf Build-Vorlagen-Erweiterungen
+DTSTAMP:20250204T170753Z
+SEQUENCE:0
+UID:118-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 11. Februar gibt es jetzt im Edelsteinshop von Gu
+	ild Wars 2 40 % Rabatt auf Build-Vorlagen-Erweiterungen!\n\n
+DTSTART:20250204T170000Z
+DTEND:20250211T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Unendliche Wiederverwertungskits und mehr
+DTSTAMP:20250204T170636Z
+SEQUENCE:0
+UID:117-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 11. Februar erhaltet ihr im Edelstein-Shop von Gu
+	ild Wars 2 20 % Rabatt auf Unendliche Wiederverwertungskits und Ausrüstun
+	gs-Vorlagen-Erweiterungen!\n\n
+DTSTART:20250204T170000Z
+DTEND:20250211T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Transmutation-Ladungen und mehr
+DTSTAMP:20250128T170739Z
+SEQUENCE:0
+UID:116-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis 4. Februar gibt es im Edelsteinshop 20 % Rabatt auf T
+	ransmutation-Ladungen\, Komplettes Umstylingkit\, Frisierkit\, Vertrag zur
+	 Namensänderung und Schwarzlöwen-Truhenschlüssel\n\n
+DTSTART:20250128T170000Z
+DTEND:20250204T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mondneujahr 2025
+DTSTAMP:20250122T185027Z
+SEQUENCE:0
+UID:115-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Feiert das Jahr der Schlange! Das Mondneujahr 2025 finde
+	t in Guild Wars 2 vom 28. Januar bis zum 18. Februar statt. Ihr könnt e
+	uch wieder auf all eure Lieblingsaktivitäten sowie neue Belohnungen\, Dek
+	orationen und Ziele freuen. Schaut zum Start des Festivals in eurer Ingame
+	-Post nach eurer Einladung und legt dann direkt mit dem Sammeln der Glück
+	skuverts los!\n\n
+DTSTART:20250128T170000Z
+DTEND:20250218T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf alle Staffeln der Lebendigen Welt und mehr!
+DTSTAMP:20250121T170734Z
+SEQUENCE:0
+UID:114-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Gibt es jetzt im Edelsteinshop von Guild Wars 2 20 % Raba
+	tt auf Schwarzlöwen-Aufwertungstickets auf Stufe 80 sowie alle Staffeln u
+	nd Episoden der Lebendigen Welt!\n\n
+DTSTART:20250121T170000Z
+DTEND:20250128T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „PvP-Ansturm\"
+DTSTAMP:20250115T170326Z
+SEQUENCE:0
+UID:113-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Ab dem 21. Januar werden für das Abschließen von PvP-An
+	sturm-Erfolgen Bonusbelohnungen gewährt! Sucht zum Start des Events Zafir
+	ah in Löwenstein auf\, um mehr über das zeitlich begrenzte PvP-Ansturm-E
+	vent zu erfahren.\n\n
+DTSTART:20250121T170000Z
+DTEND:20250128T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Taschenplatz-Erweiterung
+DTSTAMP:20250114T171027Z
+SEQUENCE:0
+UID:112-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis 21. Januar gibt es im Edelsteinshop von Guild Wars 2 
+	20 % Rabatt auf Taschenplatz-Erweiterung!\n\n
+DTSTART:20250114T170000Z
+DTEND:20250121T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Das Bonus-Event „Rückkehr zur Eisbrut-Saga“
+DTSTAMP:20250114T170018Z
+SEQUENCE:0
+UID:111-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Schaut in eurer Ingame-Post nach einer Botschaft von Brah
+	am\, seht euch dann die Bonuserfolge an\, die ihr erhalten könnt\, und ma
+	cht euch auf den Weg ins Grothmar-Tal\, zu den Bjora-Sümpfen und an die N
+	ieselwald-Küste\, um Bonus-EP und Magisches Gespür zu ergattern! (Ja\, e
+	s kann mit Verstärkern gestapelt werden.)\n\n\n\n	„Rückkehr zur Eisbru
+	t-Saga“ läuft bis zum 21. Januar. Viel Spaß!\n\n
+DTSTART:20250114T170000Z
+DTEND:20250121T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Charakterplatz-Erweiterung
+DTSTAMP:20250108T155559Z
+SEQUENCE:0
+UID:110-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis 14. Januar gibt es im Edelsteinshop von Guild Wars 2 
+	20 % Rabatt auf Charakterplatz-Erweiterung!\n\n
+DTSTART:20250107T170000Z
+DTEND:20250114T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Gemeinsamer Inventarplatz
+DTSTAMP:20241231T170016Z
+SEQUENCE:0
+UID:109-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 7. Januar gibt es 20 % Rabatt im Edelsteinshop 
+	von Guild Wars 2 auf Gemeinsamer Inventarplatz!\n\n
+DTSTART:20241231T170000Z
+DTEND:20250107T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf ausgewählte Gleitschirme und Rucksäcke
+DTSTAMP:20241227T170008Z
+SEQUENCE:0
+UID:108-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis 10. Januar gibt es im Edelsteinshop von Guild Wars
+	 2 20 % Rabatt auf ausgewählte Gleitschirme und Rucksäcke!\n\n
+DTSTART:20241227T170000Z
+DTEND:20250110T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Banklagerplatz-Erweiterungen
+DTSTAMP:20241224T170011Z
+SEQUENCE:0
+UID:107-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="GWMOD.7052":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 31. Dezember gibt es im Edelsteinshop von Guild 
+	Wars 2 20 % Rabatt auf Banklagerplatz-Erweiterungen und alle Salon-Dauer
+	pässe!\n\n
+DTSTART:20241224T170000Z
+DTEND:20241231T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Materialienlager-Erweiterung und mehr
+DTSTAMP:20241217T170447Z
+SEQUENCE:0
+UID:106-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 24. Dezember gibt es jetzt im Edelsteinshop von G
+	uild Wars 2 20 % Rabatt auf Materialienlager-Erweiterung\, Wiederaufladend
+	er Teleport zum Freund\, Schwarzlöwen-Expeditionstafel-Vertag und Schwarz
+	löwen-Gartenbeet-Urkunde!\n\n
+DTSTART:20241217T170000Z
+DTEND:20241224T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:40 % Rabatt auf Build-Vorlagen-Erweiterungen
+DTSTAMP:20241210T171617Z
+SEQUENCE:0
+UID:105-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 17. Dezember gibt es jetzt im Edelsteinshop von G
+	uild Wars 2 40 % Rabatt auf Build-Vorlagen-Erweiterungen!\n\n
+DTSTART:20241210T170000Z
+DTEND:20241217T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Unendliche Wiederverwertungskits und mehr
+DTSTAMP:20241210T171523Z
+SEQUENCE:0
+UID:104-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 17. Dezember erhaltet ihr im Guild Wars 2 Edelste
+	in-Shop 20 % Rabatt auf Unendliche Wiederverwertungskits und Ausrüstungs-
+	Vorlagen-Erweiterungen!\n\n
+DTSTART:20241210T170000Z
+DTEND:20241217T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Transmutation-Ladungen und mehr!
+DTSTAMP:20241203T185205Z
+SEQUENCE:0
+UID:103-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis 10. Dezember gibt es im Edelsteinshop 20 % Rabatt auf
+	 Transmutation-Ladungen\, Komplettes Umstylingkit\, Frisierkit und Vertrag
+	 zur Namensänderung!\n\n
+DTSTART:20241203T170000Z
+DTEND:20241210T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Die Herbstangebote in Guild Wars 2 starten heute!
+DTSTAMP:20241127T182214Z
+SEQUENCE:0
+UID:102-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Erlebt vergangene Abenteuer mit den herbstlichen Angebote
+	n von Guild Wars 2! Bis zum 4. Dezember bekommt ihr bis zu 75% Rabatt auf 
+	Erweiterungen und die Serie der Lebendigen Welt! https://buy.guildwars2.co
+	m\n\n
+DTSTART:20241127T150000Z
+DTEND:20241204T150000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf alle Staffeln der Lebendigen Welt und mehr!
+DTSTAMP:20241126T202517Z
+SEQUENCE:0
+UID:101-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 3. Dezember gibt es jetzt im Edelsteinshop von Gu
+	ild Wars 2 20 % Rabatt auf Schwarzlöwen-Aufwertungstickets auf Stufe 80 s
+	owie alle Staffeln und Episoden der Lebendigen Welt!\n\n
+DTSTART:20241126T170000Z
+DTEND:20241203T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Taschenplatz-Erweiterung
+DTSTAMP:20241119T170943Z
+SEQUENCE:0
+UID:100-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis 26. November gibt es im Edelsteinshop von Guild Wars 
+	2 20 % Rabatt auf Taschenplatz-Erweiterung!\n\n
+DTSTART:20241119T170000Z
+DTEND:20241126T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Wintertag-Event
+DTSTAMP:20241115T213957Z
+SEQUENCE:0
+UID:99-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Von 10. bis  findet unser jährliches Wintertag-Festival
+	 statt\, bei dem Spieler gemeinsam Tyrias Neujahr feiern!\n\n
+DTSTART:20241210T170000Z
+DTEND:20250102T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Evon Schlitzklinges „Geburtstagsfeier“
+DTSTAMP:20241115T213827Z
+SEQUENCE:0
+UID:98-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Begebt euch nach Löwenstein und feiert Evon Schlitzkling
+	es Geburtstag\, wie es sich gehört! Die Gewölbe öffnen sich\, und vom 2
+	5. November bis 2. Dezember können Spieler Gegenstände gegen besondere B
+	elohnungen eintauschen. \n\n
+DTSTART:20241125T170000Z
+DTEND:20241202T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Twitch Drops kommen am 19. November
+DTSTAMP:20241113T190942Z
+SEQUENCE:0
+UID:97-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Von 19. bis 25. November solltet ihr eurem bevorzugten Gu
+	ild Wars 2-Streamer zusehen\, um Belohnungen wie 5 Transmutation-Ladungen\
+	, Skin für Festlicher Hut\, Schneeflocken-Gleitschirm und Wintersonnenwen
+	de-Kleidungsset zu erhalten. Seht insgesamt 7 Stunden zu\, um alles zu erh
+	alten!\n\n
+DTSTART:20241119T170000Z
+DTEND:20241124T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Event „Schnellstart für neue Helden“
+DTSTAMP:20241112T174731Z
+SEQUENCE:0
+UID:96-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Von 12. bis 26. November können Spieler an einem zweiwö
+	chigen besonderen Event teilnehmen\, der den Effekt „Schub für ‚Schne
+	llstart für neue Helden‘“ gewährt. Außerdem können sie auswählen 
+	zwischen exotischer Haupthand- und exotischer Zweihandwaffe\, die dynamisc
+	h mit der Stufe des Charakters skaliert.\n\n
+DTSTART:20241112T170000Z
+DTEND:20241126T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Charakterplatz-Erweiterung
+DTSTAMP:20241112T174058Z
+SEQUENCE:0
+UID:95-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis 19. November gibt es im Edelsteinshop von Guild Wars 
+	2 20 % Rabatt auf Charakterplatz-Erweiterung!\n\n
+DTSTART:20241112T170000Z
+DTEND:20241119T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Gemeinsamer Inventarplatz
+DTSTAMP:20241105T170948Z
+SEQUENCE:0
+UID:94-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 12. November gibt es im Edelsteinshop von Guild W
+	ars 2 20 % Rabatt auf Gemeinsamer Inventarplatz!\n\n
+DTSTART:20241105T170000Z
+DTEND:20241112T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Banklagerplatz-Erweiterungen und alle Salon-
+	Dauerpässe
+DTSTAMP:20241030T205100Z
+SEQUENCE:0
+UID:93-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 5. November gibt es jetzt 20 % Rabatt im Edelst
+	einshop von Guild Wars 2 auf Banklagerplatz-Erweiterungen und alle Salon
+	-Dauerpässe!\n\n
+DTSTART:20241029T160000Z
+DTEND:20241105T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Materialienlager-Erweiterungen und mehr
+DTSTAMP:20241022T161004Z
+SEQUENCE:0
+UID:92-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 29. Oktober gibt es jetzt im Edelsteinshop von Gu
+	ild Wars 2 20 % Rabatt auf Materialienlager-Erweiterungen\, „Wiederaufla
+	dender Teleport zum Freund“-Marken\, Schwarzlöwen-Expeditionstafel-Ver
+	träge und Schwarzlöwen-Gartenbeet-Urkunden!\n\n
+DTSTART:20241022T160000Z
+DTEND:20241029T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Macht mit bei Extra Life 2024!
+DTSTAMP:20241017T172926Z
+SEQUENCE:0
+UID:91-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Seit 2017 ist ArenaNet stolz darauf\, im Rahmen des jähr
+	lichen Extra-Life-Gaming-Marathons eine Partnerschaft mit Children’s Mir
+	acle Network Hospitals einzugehen\, und wir freuen uns\, diese Tradition f
+	ortzusetzen! Am Freitag\, dem 1. November\, um 21:00 Uhr MEZ (12:00 Uhr PS
+	T) starten das 24-stündige Gaming- und Fundraising-Event und rufen unsere
+	 großartige Community dazu auf\, diese unglaubliche Aktion zu unterstütz
+	en. Nehmt an diesem unvergesslichen Event teil\, das wirklich etwas bewirk
+	t! Weitere Informationen zum diesjährigen Extra Life und allen tollen Bel
+	ohnungen\, die wir anbieten werden\, findet ihr im neuesten Blogbeitrag hi
+	er: https://www.guildwars2.com/news/team-arenanet-for-extra-life-2024\n\n
+DTSTART:20241101T190000Z
+DTEND:20241102T190000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:40 % Rabatt auf Build-Vorlagen-Erweiterungen
+DTSTAMP:20241015T161943Z
+SEQUENCE:0
+UID:90-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 22. Oktober gibt es jetzt im Edelsteinshop von Gu
+	ild Wars 2 40 % Rabatt auf Build-Vorlagen-Erweiterungen!\n\n
+DTSTART:20241015T160000Z
+DTEND:20241022T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Unendliche Wiederverwertungskits und mehr
+DTSTAMP:20241015T161316Z
+SEQUENCE:0
+UID:89-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 22. Oktober gibt es jetzt im Edelsteinshop von Gu
+	ild Wars 2 20 % Rabatt auf Unendliche Wiederverwertungskits und Ausrüstun
+	gs-Vorlagen-Erweiterungen!\n\n
+DTSTART:20241015T160000Z
+DTEND:20241022T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Transmutation-Ladungen\, Komplette Umstyling
+	kits und mehr
+DTSTAMP:20241008T160704Z
+SEQUENCE:0
+UID:88-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 15. Oktober gibt es jetzt im Edelsteinshop von Gu
+	ild Wars 2 20 % Rabatt auf Transmutation-Ladungen\, Komplette Umstylingkit
+	s\, Frisierkits\, Verträge zur Namensänderung und Schwarzlöwen-Truhens
+	chlüssel!\n\n
+DTSTART:20241008T160000Z
+DTEND:20241015T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Schwarzlöwen-Aufwertungsticket auf Stufe 80
+	 und alle Staffeln und Episoden der Lebendigen Welt
+DTSTAMP:20241001T164437Z
+SEQUENCE:0
+UID:87-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 8. Oktober gibt es jetzt im Edelsteinshop von Gui
+	ld Wars 2 20 % Rabatt auf Schwarzlöwen-Aufwertungstickets auf Stufe 80 un
+	d alle Staffeln und Episoden der Lebendigen Welt!\n\n
+DTSTART:20241001T160000Z
+DTEND:20241008T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Taschenplatz-Erweiterungen
+DTSTAMP:20240924T160639Z
+SEQUENCE:0
+UID:86-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 1. Oktober gibt es im Edelsteinshop von Guild W
+	ars 2 20 % Rabatt auf Taschenplatz-Erweiterungen!\n\n
+DTSTART:20240924T160000Z
+DTEND:20241001T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Charakterplatz-Erweiterung
+DTSTAMP:20240917T160732Z
+SEQUENCE:0
+UID:85-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Ab sofort und bis zum 24. September bekommt ihr 20 % Raba
+	tt auf die Charakterplatz-Erweiterung im Edelstein-Shop von Guild Wars 2!\
+	n\n
+DTSTART:20240917T160000Z
+DTEND:20240924T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Gemeinsame Inventarplätze
+DTSTAMP:20240910T160821Z
+SEQUENCE:0
+UID:84-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 17. September gibt es im Edelsteinshop von Guild 
+	Wars 2 20 % Rabatt auf gemeinsame Inventarplätze!\n\n
+DTSTART:20240910T160000Z
+DTEND:20240917T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Materialienlagererweiterungen und mehr
+DTSTAMP:20240827T191133Z
+SEQUENCE:0
+UID:80-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 3. September gibt es im Edelsteinshop von Guild W
+	ars 2 20 % Rabatt auf Materialienlager-Erweiterungen\, Wiederaufladung „
+	Teleport zum Freund“-Marken\, Schwarzlöwen-Expeditionstafel-Verträge u
+	nd Schwarzlöwen-Gartenbeet-Urkunden!\n\n
+DTSTART:20240827T160000Z
+DTEND:20240903T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Das Beta-Event für „Vorstoß“
+DTSTAMP:20240905T172650Z
+SEQUENCE:0
+UID:83-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Das Beta-Event für „Vorstoß“ beginnt am Dienstag\, 
+	10. September um 21:00 Uhr MESZ (12:00 Uhr PDT) und endet am Montag\, den 
+	23. September um 02:00 Uhr MESZ (17:00 Uhr PDT des Vortags).\n\n
+DTSTART:20240910T190000Z
+DTEND:20240924T000000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Das Turnier der Legenden kehrt zurück
+DTSTAMP:20240905T172523Z
+SEQUENCE:0
+UID:82-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Wie bereits vor Kurzem erwähnt ist das Turnier der Legen
+	den teil unserer aktuellen Updates für automatisierte Turniere. Die näch
+	ste Runde dieses sagenumwobenen Events beginnt am 21. September 2024 um 21
+	 Uhr MESZ (12 Uhr PDT).\n\n
+DTSTART:20240921T190000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Banklagerplatz-Erweiterungen
+DTSTAMP:20240904T202940Z
+SEQUENCE:0
+UID:81-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 10. September gibt es im Edelsteinshop von Guild 
+	Wars 2 20 % Rabatt auf Banklagerplatz-Erweiterungen und alle Salon-Dauerp
+	ässe!\n\n
+DTSTART:20240903T160000Z
+DTEND:20240909T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Unendliche Wiederverwertungskits und mehr
+DTSTAMP:20240820T170850Z
+SEQUENCE:0
+UID:79-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 27. August gibt es im Edelsteinshop von Guild War
+	s 2 20 % Rabatt auf Unendliche Wiederverwertungskits und Ausrüstungs-Vorl
+	agen-Erweiterungen sowie 40 % Rabatt auf Build-Vorlagen-Erweiterungen!\n\n
+DTSTART:20240820T160000Z
+DTEND:20240827T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Halloween-Festival „Schatten des Verrückten Königs“
+DTSTAMP:20240820T170153Z
+SEQUENCE:0
+UID:78-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	15. Oktober bis 5. November: Halloween-Festival „Schatt
+	en des Verrückten Königs“\n\n
+DTSTART:20241015T160000Z
+DTEND:20241105T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Lebendige Welt: Staffel 4“
+DTSTAMP:20240820T170006Z
+SEQUENCE:0
+UID:77-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	1. Oktober bis 8. Oktober: Bonus-Event „Lebendige Welt:
+	 Staffel 4“\n\n
+DTSTART:20241001T160000Z
+DTEND:20241008T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „WvW-Ansturm“
+DTSTAMP:20240820T165406Z
+SEQUENCE:0
+UID:76-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	24. September bis 1. Oktober: Bonus-Event „WvW-Anstur
+	m“\n\n
+DTSTART:20240924T160000Z
+DTEND:20241001T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Rückkehr zu Path of Fire“
+DTSTAMP:20240820T165049Z
+SEQUENCE:0
+UID:75-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	17. September bis 24. September: Bonus-Event „Rückkehr
+	 zu Path of Fire“\n\n
+DTSTART:20240917T160000Z
+DTEND:20240924T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Fraktal-Ansturm“
+DTSTAMP:20240820T164936Z
+SEQUENCE:0
+UID:74-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	10. September bis 17. September: Bonus-Event „Fraktal-A
+	nsturm“\n\n
+DTSTART:20240910T160000Z
+DTEND:20240917T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Guild Wars 2: API wird von 16. bis 23. August abgeschaltet
+DTSTAMP:20240815T193309Z
+SEQUENCE:0
+UID:73-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Hallo zusammen! Da die Veröffentlichung von Janthir Wild
+	s unmittelbar bevorsteht\, werden wir die API ab morgen\, dem 16. August\,
+	 vorübergehend deaktivieren. Wie schon bei früheren Erweiterungen wollen
+	 wir damit verhindern\, dass Spoiler in die Öffentlichkeit gelangen. Wir 
+	werden die API am 23. August wieder aktivieren!\n\n
+DTSTART:20240816T160000Z
+DTEND:20240823T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Holt euch den „/Kaffeeschlürf“-Emote-Folianten mit Twit
+	ch Drops
+DTSTAMP:20240815T160159Z
+SEQUENCE:0
+UID:72-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Vom 20. bis zum 25. August könnt ihr euren bevorzugten G
+	uild Wars 2-Streamern zusehen und dafür Belohnungen wie den Skin für Fla
+	uschige Quaggan-Mütze\, den „Grüner Quaggan“-Rucksack-Bezug\, ein Mi
+	ni-Tiergefährte-Bündel\, den „/Kaffeeschlürf“-Emote-Folianten und d
+	as kosmetische Piratenbündel erhalten. Seht insgesamt 10 Stunden zu\, um 
+	alles zu erhalten!\n\n
+DTSTART:20240820T160000Z
+DTEND:20240825T065900Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Gemeinschaftsverstärkung-Lagerfeuer
+DTSTAMP:20240806T161236Z
+SEQUENCE:0
+UID:71-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Von 13. bis 19. August gibt es im Edelsteinshop von Guild
+	 Wars 2 20 % Rabatt auf Gemeinschaftsverstärkung-Lagerfeuer\, und es gibt
+	 ein Gemeinschaftsverstärkung-Lagerfeuer gratis!\n\n
+DTSTART:20240813T160000Z
+DTEND:20240819T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:10 % Rabatt auf alle Schwarzlöwen-Gutscheine
+DTSTAMP:20240806T161119Z
+SEQUENCE:0
+UID:70-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 19. August gibt es im Edelsteinshop von Guild War
+	s 2 10 % Rabatt auf alle Schwarzlöwen-Gutscheine für Kleidungssets\, Waf
+	fen\, Gleitschirme\, Rucksack-und-Gleitschirm-Sets\, Musikinstrumente und 
+	Getragene Spielzeuge!\n\n
+DTSTART:20240806T160000Z
+DTEND:20240819T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:30 % Rabatt auf Schwarzlöwen-Truhenschlüssel
+DTSTAMP:20240806T160958Z
+SEQUENCE:0
+UID:69-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis zum 12. August gibt es im Edelsteinshop von Guild War
+	s 2 30 % Rabatt auf Schwarzlöwen-Truhenschlüssel!\n\n
+DTSTART:20240806T160000Z
+DTEND:20240812T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Komplette Umstylingkits und mehr
+DTSTAMP:20240723T160227Z
+SEQUENCE:0
+UID:68-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Bis 30. Juni gibt es 20 % Rabatt im Edelsteinshop von Gui
+	ld Wars 2 auf Transmutation-Ladungen\, Komplette Umstylingkits\, Frisierki
+	ts und Verträge zur Namensänderung!\n\n
+DTSTART:20240723T160000Z
+DTEND:20240730T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Lebendige Welt und Aufwertungsticket auf Stu
+	fe 80. Bis 23.
+DTSTAMP:20240716T164928Z
+SEQUENCE:0
+UID:67-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Joie.6084":noreply@invisioncloudcommunity.com
+DESCRIPTION:\n	Through July 1st\, Guild Wars 2 Gem Store is offering 20%
+	 off Level 80 Upgrade Tickets and all Living World Episodes and Seasons! 
+	\n\n
+DTSTART:20240716T160000Z
+DTEND:20240723T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: 20 % Rabatt auf Taschenplatz-Erweiterungen.
+DTSTAMP:20240709T160451Z
+SEQUENCE:0
+UID:66-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 16. Juli gibt es 20 % Rabatt im Edelsteinshop v
+	on Guild Wars 2 auf Taschenplatz-Erweiterungen!\n\n
+DTSTART:20240709T160000Z
+DTEND:20240716T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Charakterplatz-Erweiterungen.
+DTSTAMP:20240703T160525Z
+SEQUENCE:0
+UID:65-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 9. Juli gibt es 20 % Rabatt im Edelsteinshop vo
+	n Guild Wars 2 auf Charakterplatz-Erweiterungen! \n\n
+DTSTART:20240702T160000Z
+DTEND:20240709T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Die Guild Wars 2-Sommerangebote starten heute!
+DTSTAMP:20240627T182150Z
+SEQUENCE:0
+UID:64-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Nutzt diese fantastischen Sommerrabatte auf unsere ersten
+	 vier Erweiterungen! \n\n
+DTSTART:20240627T170000Z
+DTEND:20240711T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf gemeinsame Inventarplätze.
+DTSTAMP:20240625T160101Z
+SEQUENCE:0
+UID:63-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 2. Juli gibt es 20 % Rabatt im Edelsteinshop vo
+	n Guild Wars 2 auf gemeinsame Inventarplätze! \n\n
+DTSTART:20240625T160000Z
+DTEND:20240702T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Banklagerplatz-Erweiterungen und Salon-Dauer
+	pässe.
+DTSTAMP:20240620T201400Z
+SEQUENCE:0
+UID:62-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 2. Juli gibt es 20 % Rabatt im Edelsteinshop von 
+	Guild Wars 2 auf Banklagerplatz-Erweiterungen und alle Salon-Dauerpässe!
+	 \n\n
+DTSTART:20240618T160000Z
+DTEND:20240702T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fest der Vier Winde: 30. Juli bis 20. August
+DTSTAMP:20240514T140624Z
+SEQUENCE:0
+UID:52-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Das jährliche Fest der Vier Winde kehrt am 30. Juli in G
+	uild Wars 2 zurück! In eurer Ingame-Post findet ihr zu Beginn des Festiva
+	ls eine Einladung. Nehmt in den Labyrinthklippen und im Kronpavillon an de
+	n Feierlichkeiten teil!\n\n
+DTSTART:20240730T160000Z
+DTEND:20240820T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Rückkehr zu Staffel 3“
+DTSTAMP:20240514T140454Z
+SEQUENCE:0
+UID:51-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Kehrt vom 23. bis 30. Juli in die Lebendige Welt: Staffel
+	 3 zurück\, um euch Bonus-Erfolge und Belohnungen zu sichern! \n\n	 \n\
+	n
+DTSTART:20240723T160000Z
+DTEND:20240730T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „PvP-Ansturm“
+DTSTAMP:20240514T140340Z
+SEQUENCE:0
+UID:50-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Der PvP-Ansturm kehrt vom 16. bis 23. Juni zurück und br
+	ingt eine ganze Woche lang Bonus-Erfolge und -Belohnungen!\n\n
+DTSTART:20240716T160000Z
+DTEND:20240723T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Verlies-Ansturm“
+DTSTAMP:20240514T140002Z
+SEQUENCE:0
+UID:49-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Vom 9. bis 16. Juli kehrt das Bonus-Event „Verlies-Anst
+	urm“ zurück in Guild Wars 2!\n\n
+DTSTART:20240709T160000Z
+DTEND:20240716T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:„Versunkener Schatz“-Woche
+DTSTAMP:20240514T135817Z
+SEQUENCE:0
+UID:48-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Vom 2. bis 9. Juli steigt die „Versunkener Schatz“-Wo
+	che!\n\n
+DTSTART:20240709T160000Z
+DTEND:20240716T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:PvP-Liga-Saison 42
+DTSTAMP:20240514T135611Z
+SEQUENCE:0
+UID:47-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	PvP-Liga-Saison 42 läuft vom 3. Juli bis 2. September.\n
+	\n
+DTSTART:20240702T160000Z
+DTEND:20240709T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Guild Wars 2-Spielaktualisierung
+DTSTAMP:20240514T135340Z
+SEQUENCE:0
+UID:46-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Das Spielbalance-Update vom 25. Juni umfasst das neueste 
+	Fertigkeiten- und Spielbalance-Update und eine Aktualisierung der Belohnun
+	gen für PvP-Spiele mit Rangwertung.\n\n
+DTSTART:20240625T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Das Drachen-Gepolter kehrt vom 4. bis 25. Juni zurück!
+DTSTAMP:20240514T134037Z
+SEQUENCE:0
+UID:44-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Tyrias jährliche Feier des Sieges über die Alt-Drachen*
+	 kehrt am 4. Juni in Guild Wars 2 zurück! In eurer Ingame-Post findet i
+	hr eine Einladung zum Drachen-Gepolter\, sobald das Festival begonnen hat.
+	 \n\n	*Natürlich ausgeschlossen Aurene.\n\n
+DTSTART:20240604T160000Z
+DTEND:20240624T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Beta-Event zu Janthir Wilds für Speer-Fertigkeiten
+DTSTAMP:20240607T171421Z
+SEQUENCE:0
+UID:61-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Macht mit bei unserem Beta-Event vom 27. Juni 18 Uhr MESZ
+	 (9 Uhr PT) bis zum 30. Juni 7 Uhr MESZ (30. Juni 22 Uhr PT). Hier kann je
+	der die neuen Speer-Fertigkeiten ausprobieren und uns Feedback dazu geben!
+	\n\n
+DTSTART:20240627T160000Z
+DTEND:20240701T050000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Livestream-Vorschau: Speer-Fertigkeiten in Janthir Wilds
+DTSTAMP:20240607T171309Z
+SEQUENCE:0
+UID:60-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Am Freitag\, dem 21. Juni um 21 Uhr MESZ (12 Uhr PT) zeig
+	en wir euch alle neuen Speerfertigkeiten live auf twitch.tv/guildwars2\n\n
+DTSTART:20240621T190000Z
+DTEND:20240621T070000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Wiederverwert-o-Maten\, alle Drachen-Gepolt
+	er-Gegenstände und mehr!
+DTSTAMP:20240604T190841Z
+SEQUENCE:0
+UID:59-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis 18. Juni sind Ausrüstungs-Vorlagen-Erweiterungen sow
+	ie die Kupferbetriebenen und Silberbetriebenen Wiederverwert-o-Maten sowie
+	 die Wiederverwert-o-Maten des Runenschöpfers um 20 % herabgesetzt. Build
+	-Vorlagen-Erweiterungen sind um 40 % reduziert. \n\n	Bis 24. Juni sind a
+	lle Drachen-Gepolter-Gegenstände 20 % günstiger. \n\n	Im Edelsteinshop
+	 von Guild Wars 2 findet ihr sämtliche Neuigkeiten und Rabatte!\n\n
+DTSTART:20240604T160000Z
+DTEND:20240618T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Guild Wars 2: Janthir Wilds
+DTSTAMP:20240604T190727Z
+SEQUENCE:0
+UID:58-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Unsere fünfte Erweiterung erscheint am 20. August! Mehr 
+	darüber erfahrt ihr hier! \n\n\n\n	Der Vorverkauf ist ab sofort verfügb
+	ar! Die vollständigen Informationen zu den in den Editionen Standard\, De
+	luxe und Ultimate beinhalteten Gegenständen findet ihr auf der offizielle
+	n Shopseite. Ihr erhaltet Guild Wars 2: Janthir Wilds im offiziellen Store
+	\, im Ingame-Shop\, auf Steam oder bei offiziellen Händlern. \n\n
+DTSTART;VALUE=DATE:20240819
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: 20 % Rabatt auf Schwarzlöwen-Schlüssel und mehr!
+DTSTAMP:20240528T190102Z
+SEQUENCE:0
+UID:57-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis 11. Juni gibt es 20 % Rabatt im Edelsteinshop von Gu
+	ild Wars 2 auf Schwarzlöwen-Schlüssel\, Transmutation-Ladungen\, Kompl
+	ette Umstylingkits\, Frisur-Kits und Verträge zur Namensänderung!\n\n
+DTSTART:20240528T160000Z
+DTEND:20240611T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Enthüllung der Guild Wars 2 Erweiterung: 4. Juni
+DTSTAMP:20240528T183253Z
+SEQUENCE:0
+UID:55-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n\n	 \n\n
+DTSTART;VALUE=DATE:20240603
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Lebendige Welt und Aufwertungsticket auf St
+	ufe 80
+DTSTAMP:20240521T155808Z
+SEQUENCE:0
+UID:54-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis 4. Juni gibt es 20 % Rabatt im Edelsteinshop von Gui
+	ld Wars 2 auf Aufwertungstickets auf Stufe 80 und alle Episoden und Sais
+	ons der Lebendigen Welt!\n\n
+DTSTART:20240521T160000Z
+DTEND:20240604T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Livestream-Vorschau: Spielbalance-Update vom 25. Juni
+DTSTAMP:20240514T133251Z
+SEQUENCE:0
+UID:42-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Besucht den Twitch-Kanal von Guild Wars 2 am Freitag\, de
+	m 24. Mai um 21 Uhr MEZ (12 Uhr PT)! Taylor Brooks\, Roy Marks und Cal Coh
+	en werden eine Vorschau auf das Fertigkeiten- und Spielbalance-Update biet
+	en\, das am 25. Juni veröffentlicht wird.\n\n
+DTSTART:20240524T070000Z
+DTEND:20240524T090000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Die Super Adventure Box kehrt zurück!
+DTSTAMP:20240220T140503Z
+SEQUENCE:0
+UID:24-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Moto und seine berühmte Erfindung\, die Super Adventure 
+	Box\, kehren nach Tyria zurück! Das 8-Bit-Spiel-im-Spiel bekommt aktualis
+	ierte Belohnungen und ein paar Ergänzungen zu der Testzone Welt 3.\n\n
+DTSTART:20240416T160000Z
+DTEND:20240507T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Die Dauerhaft-Beta der Welten-Umstrukturierung beginnt
+DTSTAMP:20240514T135148Z
+SEQUENCE:0
+UID:45-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Mit dem WvW-Reset am 14. Juni beginnt die Dauerhaft-Beta 
+	des Welten-Umstrukturierung-Systems. Alle Einzelheiten erfahrt ihr in unse
+	rem „Neues aus dem Studio“ für Frühling und Sommer. \n\n	 \n\n
+DTSTART;VALUE=DATE:20240613
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Guild Wars 2-Spielaktualisierung
+DTSTAMP:20240514T133738Z
+SEQUENCE:0
+UID:43-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Die Spielaktualisierung vom 4. Juni bringt Drachen-Gepolt
+	er\, Herausforderungsmodus für das Fraktal-Verlies „Einsamer Turm“ un
+	d mehr!\n\n	 \n\n
+DTSTART:20240604T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:„Der Mitternachtskönig“ ab 21. Mai
+DTSTAMP:20240514T132410Z
+SEQUENCE:0
+UID:41-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Forum Moderator.6104":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	 „Der Mitternachtskönig“\, das letzte Update für 
+	Secrets of the Obscure\, wird am 21. Mai in Guild Wars 2 veröffentl
+	icht! \n\n	 \n\n
+DTSTART:20240521T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Taschenplätze
+DTSTAMP:20240514T185522Z
+SEQUENCE:0
+UID:53-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Spectral Spiral.6109":noreply@invisioncloudcom
+	munity.com
+DESCRIPTION:\n	Bis 28. Mai gibt es 20 % Rabatt im Edelsteinshop von Guil
+	d Wars 2 auf Taschenplätze!\n\n
+DTSTART:20240514T070000Z
+DTEND:20240528T070000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Charakterplatz-Erweiterungen
+DTSTAMP:20240509T181910Z
+SEQUENCE:0
+UID:40-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis 14. Mai gibt es 20 % Rabatt im Edelsteinshop von Gui
+	ld Wars 2 auf Charakterplatz-Erweiterungen!\n\n
+DTSTART:20240507T160000Z
+DTEND:20240514T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Gemeinsame Inventarplätze
+DTSTAMP:20240430T171918Z
+SEQUENCE:0
+UID:39-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 7. Mai gibt es 20 % Rabatt auf Gemeinsame Inventa
+	rplätze!\n\n
+DTSTART:20240430T160000Z
+DTEND:20240507T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Bank-Registerkarten und Dauerpässe für Sal
+	ons
+DTSTAMP:20240423T160046Z
+SEQUENCE:0
+UID:38-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 30. April gibt es 20 % Rabatt auf Bank-Registerka
+	rten und alle Salon-Dauerpässe!\n\n
+DTSTART:20240423T160000Z
+DTEND:20240430T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf SAB-Gegenstände\, Lagererweiterungen und me
+	hr!
+DTSTAMP:20240416T160502Z
+SEQUENCE:0
+UID:37-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 23. April gibt es 20 % Rabatt auf Lagererweiter
+	ungen\, Wiederaufladender „Teleport zum Freund“\, Schwarzlöwen-Auftra
+	gstafeln und Schwarzlöwen-Gartenbeet-Urkunden!\n\n\n\n	Die Gegenstände d
+	er Super Adventure Box sind bis zum 7. Mai wieder im Edelsteinshop mit ein
+	em Rabatt von 20 % erhältlich!\n\n
+DTSTART:20240416T160000Z
+DTEND:20240423T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Rabatt auf Wiederverwert-o-Maten\, Build- und Ausrüstungs-V
+	orlagen
+DTSTAMP:20240409T193153Z
+SEQUENCE:0
+UID:36-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Von 9. bis 16. April gibt es 40 % Rabatt auf Build-Vorlag
+	en sowie 20 % auf die folgenden Gegenstände: Ausrüstungs-Vorlagen\, Kupf
+	erbetriebener Wiederverwert-o-Mat\, Silberbetriebener Wiederverwert-o-Mat 
+	und Wiederverwert-o-Mat des Runenschöpfers.\n\n
+DTSTART:20240409T160000Z
+DTEND:20240416T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Komplette Umstylingkits und mehr
+DTSTAMP:20240402T161240Z
+SEQUENCE:0
+UID:35-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Transmutation-Ladungen\, Komplette Umstylingkits\, Frisie
+	rkits und Verträge zur Namensänderung sind von 2. bis 9. April 20 % gü
+	nstiger!\n\n
+DTSTART:20240402T160000Z
+DTEND:20240409T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Angebot: Die ersten 3 Erweiterungen zu Guild Wars 2
+DTSTAMP:20240314T171535Z
+SEQUENCE:0
+UID:34-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Erhaltet beeindruckende Rabatte auf unsere ersten drei Er
+	weiterungen zu Guild Wars 2 bis 21. März 18 Uhr MEZ (10 Uhr PDT). Der Rab
+	att ist verfügbar auf buy.guildwars2.com sowie bei ausgewählten Drittanb
+	ietern. Die Liste aller Anbieter und alle Einzelheiten findet ihr auf: ht
+	tps://www.guildwars2.com/news/spring-into-some-seasonal-sales/\n\n
+DTSTART:20240314T170000Z
+DTEND:20240321T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:„Das Reich der Träume“ ist nun verfügbar!
+DTSTAMP:20240220T140131Z
+SEQUENCE:0
+UID:18-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	„Das Reich der Träume“\, das zweite große Update z
+	u Guild Wars 2®: Secrets of the Obscure™\, ist nun verfügbar! Lest h
+	ier alles über dieses Update\, und wir sehen uns im Spiel!\n\n
+DTSTART;VALUE=DATE:20240226
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Account-Aufwertungen
+DTSTAMP:20240226T135320Z
+SEQUENCE:0
+UID:33-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Von 26. März bis 2. April sind zahlreiche Account-Aufwer
+	tungen um 20 % reduziert\, darunter Banklagerplatz-Erweiterungen\, Tasche
+	nplatz-Erweiterungen\, Charakterplatz-Erweiterungen und mehr!\n\n
+DTSTART:20240326T160000Z
+DTEND:20240402T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Stuhl- und Rüstungs-Skins
+DTSTAMP:20240226T135311Z
+SEQUENCE:0
+UID:32-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Von 19. bis 26. März erhaltet ihr 20 % Rabatt auf Stuhl
+	-Skins und einzigartige Rüstungs-Skins im Edelsteinshop!\n\n
+DTSTART:20240319T160000Z
+DTEND:20240326T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Reittier-Skins\, Extra-Gegenstände\, Farbk
+	its
+DTSTAMP:20240226T135305Z
+SEQUENCE:0
+UID:31-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Zahlreiche Extra-Gegenstände sowie Reittier-Skins und Fa
+	rbkits sind von 12. bis 19. März 20 % günstiger im Edelsteinshop erhäl
+	tlich!\n\n
+DTSTART:20240312T160000Z
+DTEND:20240319T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf alle Rucksäcke und Gleitschirme
+DTSTAMP:20240226T135254Z
+SEQUENCE:0
+UID:29-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Von 5. bis 12. März sind alle Rucksäcke und Gleitschirm
+	e 20 % günstiger im Edelsteinshop!\n\n
+DTSTART:20240305T170000Z
+DTEND:20240312T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Schwarzlöwen-Truhenschlüssel
+DTSTAMP:20240226T135300Z
+SEQUENCE:0
+UID:30-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Von 22. bis 26. März erhaltet ihr 20 % Rabatt auf Schwa
+	rzlöwen-Truhenschlüssel im Edelsteinshop!\n\n
+DTSTART:20240322T160000Z
+DTEND:20240326T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Schwarzlöwen-Truhenschlüssel
+DTSTAMP:20240226T135248Z
+SEQUENCE:0
+UID:28-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Von 1. bis 5. März erhaltet ihr 20 % Rabatt auf Schwar
+	zlöwen-Truhenschlüssel im Edelsteinshop!\n\n
+DTSTART:20240301T170000Z
+DTEND:20240305T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf alle Kleidungssets und einzigartige Waffen-S
+	kins
+DTSTAMP:20240226T135242Z
+SEQUENCE:0
+UID:27-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Alle Kleidungssets und einzigartige Waffen-Skins sind von
+	 27. Feb. bis 5. März 20 % günstiger im Edelsteinshop!\n\n
+DTSTART:20240227T170000Z
+DTEND:20240305T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Twitch Drops starten am 27. Februar
+DTSTAMP:20240222T174919Z
+SEQUENCE:0
+UID:26-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Wir feiern den Release von „Das Reich der Träume“ mi
+	t Twitch Drops! Von 27. Februar um 18 Uhr MESZ (9 Uhr PST) bis 4. März um
+	 8:59 Uhr MESZ (3. März 23:59 Uhr PST) erhaltet ihr ein kostenloses Komfo
+	rt-Set\, indem ihr euch Twitch-Kanäle anseht\, die Guild Wars 2-Inhalte s
+	enden!\n\n\n\n	Das Komfort-Set enthält:\n\n\n\n	\n		Nebelsperren-Zuflucht
+	-Schlüssel (2 Wochen)\n	\n	\n		(5x) Handelsposten-Express\n	\n	\n		(5x) K
+	aufmanns-Express\n	\n	\n		(5x) Bankzugriff-Express\n	\n\n\n\n	Besucht unse
+	re Twitch Drops-Seite\, um mehr zu erfahren und euer Konto zu verknüpfen
+	!\n\n
+DTSTART:20240227T170000Z
+DTEND:20240304T075900Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Wiederverwert-o-Maten und Build-/Ausrüstungs-Vorlagen-Erwei
+	terungen sind bis 5. März ermäßigt!
+DTSTAMP:20240220T171208Z
+SEQUENCE:0
+UID:25-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 5. März gibt es bei der Schwarzlöwen-Handelsges
+	ellschaft Rabatte auf diese Gegenstände:\n\n\n\n	\n		Die Kupferbetriebene
+	n und Silberbetriebenen Wiederverwert-o-Maten sowie die Wiederverwert-o-Ma
+	ten des Runenschöpfers sind um 20 % herabgesetzt!\n	\n	\n		20 % Rabatt a
+	uf Ausrüstungs-Vorlagen-Erweiterungen\n	\n	\n		40 % Rabatt auf Build-Vor
+	lagen-Erweiterungen\n	\n\n\n\n	Hier seht ihr\, was sonst noch neu\, erneu
+	t verfügbar oder vergünstigt ist!\n\n
+DTSTART;VALUE=DATE:20240219
+DTEND;VALUE=DATE:20240305
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Heart of Thorns“
+DTSTAMP:20240220T140452Z
+SEQUENCE:0
+UID:23-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Kehrt von 9. bis 16. April zurück ins Herz von Maguuma\,
+	 um euch im Zuge des Bonus-Events „Heart of Thorns“ zusätzliche Bel
+	ohnungen und Erfolge zu sichern! Ihr erhaltet Ingame-Post mit Anweisungen 
+	zur Teilnahme\, wenn das Event beginnt\, und vergesst nicht\, euch ab 9. A
+	pril die Erfolge-Kategorie „Bonus-Events“ im Spiel anzusehen.\n\n
+DTSTART:20240409T160000Z
+DTEND:20240416T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Rückkehr zu Staffel 2“
+DTSTAMP:20240220T140439Z
+SEQUENCE:0
+UID:22-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Kehrt von 26. März bis 2. April in die Lebendige Welt: S
+	taffel 2 zurück\, um euch Bonus-Erfolge und Belohnungen zu sichern! Ihr e
+	rhaltet Ingame-Post mit Anweisungen zur Teilnahme\, wenn das Event beginnt
+	\, und vergesst nicht\, euch ab 26. März die Erfolge-Kategorie „Bonus-E
+	vents“ im Spiel anzusehen.\n\n
+DTSTART:20240326T160000Z
+DTEND:20240402T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „WvW-Ansturm“
+DTSTAMP:20240220T140430Z
+SEQUENCE:0
+UID:21-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Das Bonus-Event „WvW-Ansturm“ läuft von 19. bis 26.
+	 März. Spielt während der Event-Woche WvW\, um zusätzliche Belohnungen 
+	und Erfolge zu erhalten! Ihr erhaltet Ingame-Post mit Anweisungen zur Teil
+	nahme\, wenn das Event beginnt\, und vergesst nicht\, euch ab 19. März di
+	e Erfolge-Kategorie „Bonus-Events“ im Spiel anzusehen.\n\n
+DTSTART:20240319T160000Z
+DTEND:20240326T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Guild Wars 2-Spielaktualisierung
+DTSTAMP:20240220T140420Z
+SEQUENCE:0
+UID:20-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Die Spielaktualisierung vom 19. März umfasst:\n\n\n\n	\n
+			Fertigkeiten- und Spielbalance-Update\n	\n	\n		Verbesserungen der Postpr
+	ocessing-Grafikoptionen\n	\n	\n		Erweiterte Champion-Erfolge im PvP\n	\n	\
+	n		Erweiterte Erfolge für Rächer des Reiches im WvW\n	\n	\n		Fürsten-Up
+	date im WvW\n	\n	\n		Beherrschungs-Update „Adel verpflichtet“\n	\n\n\n
+	\n	Weitere Details findet ihr im Abschnitt „19. März: System-Update“ 
+	der aktuellen Ausgabe von „Neues aus dem Studio“.\n\n
+DTSTART;VALUE=DATE:20240318
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus-Event „Fraktal-Ansturm“
+DTSTAMP:20240220T140411Z
+SEQUENCE:0
+UID:19-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Das Bonus-Event „Fraktal-Ansturm“ läuft von 12. bis 
+	19. März. Schließt während der Event-Woche Fraktale der Nebel ab\, um 
+	zusätzliche Belohnungen und Erfolge zu erhalten! Ihr erhaltet Ingame-Post
+	 mit Anweisungen zur Teilnahme\, wenn das Event beginnt\, und vergesst nic
+	ht\, euch ab 12. März die Erfolge-Kategorie „Bonus-Events“ im Spiel a
+	nzusehen.\n\n
+DTSTART:20240312T160000Z
+DTEND:20240319T160000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Livestream-Vorschau: Erweiterte Waffen-Kenntnisse/Vorschau a
+	uf Spielbalance-Update März
+DTSTAMP:20240214T174058Z
+SEQUENCE:0
+UID:17-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Feb 16 Livestream announce calendar text Besucht den Tw
+	itch-Kanal von Guild Wars 2 am Freitag\, dem 16. Februar um 21 Uhr MEZ (1
+	2 Uhr PT)! Taylor Brooks\, Roy Marks und Cal Cohen werden über die Änder
+	ungen an den erweiterten Waffen-Kenntnissen sprechen und eine Vorschau auf
+	 das Spielbalance-Update vom März bieten!\n\n
+DTSTART:20240216T200000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Schwarzlöwen-Schlüssel und mehr!
+DTSTAMP:20240213T170304Z
+SEQUENCE:0
+UID:16-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bis zum 27. Februar gibt es 20 % Rabatt auf diese Gegens
+	tände:\n\n\n\n	\n		Schwarzlöwen-Truhenschlüssel\n	\n	\n		Transmutation-
+	Ladungen\n	\n	\n		Komplette Umstylingkits\n	\n	\n		Frisierkits\n	\n	\n		Ve
+	rträge zur Namensänderung\n	\n\n\n\n	Hier seht ihr\, was sonst noch neu
+	\, erneut verfügbar oder vergünstigt ist!\n\n
+DTSTART:20240213T080000Z
+DTEND:20240227T080000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schwarzlöwen-Aufwertungsticket auf Stufe 80 und Staffeln un
+	d Episoden der Lebendigen Welt sind bis 20. Februar um 20 % günstiger.
+DTSTAMP:20240206T170031Z
+SEQUENCE:0
+UID:15-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Schwarzlöwen-Aufwertungsticket auf Stufe 80 und Staffeln
+	 und Episoden der Lebendigen Welt sind bis 20. Februar um 20 % günstiger
+	.\n\n
+DTSTART:20240206T080000Z
+DTEND:20240220T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WvW-Neuverbindung
+DTSTAMP:20240131T172137Z
+SEQUENCE:0
+UID:14-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Anstehende Termine für WvW-Neuverbindungen\n\n
+DTSTART;VALUE=DATE:20240328
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WvW-Neuverbindung
+DTSTAMP:20240131T172115Z
+SEQUENCE:0
+UID:13-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Anstehende Termine für WvW-Neuverbindungen\n\n
+DTSTART;VALUE=DATE:20240229
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WvW-Neuverbindung
+DTSTAMP:20240131T172040Z
+SEQUENCE:0
+UID:12-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Anstehende Termine für WvW-Neuverbindungen\n\n
+DTSTART;VALUE=DATE:20240201
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mondneujahr 30. Januar - 20. Februar.
+DTSTAMP:20240124T170621Z
+SEQUENCE:0
+UID:10-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Das Mondneujahr-Fest ist jetzt live in Guild Wars 2!\n\n
+DTSTART;VALUE=DATE:20240129
+DTEND;VALUE=DATE:20240220
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Taschenplatz-Erweiterungen 20 % günstiger!
+DTSTAMP:20240130T182503Z
+SEQUENCE:0
+UID:11-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	 Januar bis zum 13. Februar bekommst du 20 % Rabatt auf 
+	Taschenplatz-Erweiterungen.\n\n\n\n	Loggt euch in Guild Wars 2 ein un
+	d drückt die Taste „O“\, um diese – und viele weitere – fantastis
+	chen Angebote im Edelsteinshop der Schwarzlöwen-Handelsgesellschaft zu nu
+	tzen!\n\n
+DTSTART:20240130T080000Z
+DTEND:20240213T080000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:PvP-Ansturm-Event: 23. bis 30. Januar
+DTSTAMP:20240119T170622Z
+SEQUENCE:0
+UID:8-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Das PvP-Ansturm-Event ist jetzt live! Sprecht mit Zafirah
+	 in Löwenstein\, um loszulegen. Zeitlich begrenzte Erfolge und zusätzlic
+	he Belohnungen warten auf euch!\n\n\n\n	\n\n
+DTSTART:20240123T080000Z
+DTEND:20240130T080000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Charakterplatz-Erweiterungen 20 % günstiger!
+DTSTAMP:20240123T170541Z
+SEQUENCE:0
+UID:9-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	 Vom 23. Januar bis zum 6. Februar gibt es 20 % Rabatt a
+	uf Charakterplatz-Erweiterungen!\n\n
+DTSTART:20240123T080000Z
+DTEND:20240206T080000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gemeinsame Inventarplätze sind bis 30. Januar 20 % günsti
+	ger.
+DTSTAMP:20240116T235521Z
+SEQUENCE:0
+UID:7-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Gemeinsame Inventarplätze sind bis 30. Januar 20 % gün
+	stiger. Mit diesem fantastischen Rabatt habt ihr eure Lieblingsgegenständ
+	e immer in Greifweite!\n\n	 \n\n
+DTSTART:20240116T170000Z
+DTEND:20240130T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Spielbalance-Update
+DTSTAMP:20240111T171409Z
+SEQUENCE:0
+UID:6-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Alle Details zum Update werden in unserem Forum für Upda
+	te-Notes zum Spiel veröffentlicht.\n\n\n\n	 \n\n
+DTSTART:20240130T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bonus Event: Rückkehr zu Staffel 1 der Lebendigen Welt
+DTSTAMP:20240111T170155Z
+SEQUENCE:0
+UID:5-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Macht euch bereit für das Event „Rückkehr zu Staffel 
+	1 der Lebendigen Welt“\, das vom 16. bis zum 23. Januar\, also ab nächs
+	ten Dienstag\, stattfindet! Ihr erhaltet eine Nachricht von Kapitän Ellen
+	 Kiel in Löwenstein\, um mehr zu erfahren.\n\n\n\n	 \n\n
+DTSTART:20240116T170000Z
+DTEND:20240123T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:20 % Rabatt auf Banklagerplatz-Erweiterungen und Dauerpass S
+	alon
+DTSTAMP:20240111T162905Z
+SEQUENCE:0
+UID:2-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Braucht ihr mehr Bankplatz? Oder vielleicht einen neuen S
+	tammplatz? Kein Problem! Bis zum 23. Januar gibt es 20 % Rabatt auf Bankl
+	agerplatz-Erweiterungen und Dauerpass Salon.\n\n\n\n	Loggt euch in Guild
+	 Wars 2 ein und drückt die Taste „O“\, um diese – und viele we
+	itere – fantastischen Angebote im Edelsteinshop der Schwarzlöwen-Handel
+	sgesellschaft zu nutzen!\n\n
+DTSTART:20240109T170000Z
+DTEND:20240123T170000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WvW-Ansturm-Event
+DTSTAMP:20240111T163721Z
+SEQUENCE:0
+UID:3-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Bürger von Tyria! Besucht Fort Marriner in Löwenstein\,
+	 um mit Kapitän Magnus zu sprechen und das WvW-Ansturm-Event von jetzt bi
+	s zum 16. Januar zu starten!\n\n
+DTSTART:20240109T080000Z
+DTEND:20240116T080000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Erhaltet bis zum 15. Januar 20 % Rabatt auf diese BLTC-Artik
+	el!
+DTSTAMP:20240111T160723Z
+SEQUENCE:0
+UID:1-2-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Das neue Jahr fängt gut an\, mit einigen Rabatten im #Gu
+	ildWars2-Edelsteinshop! Bis zum 15. Januar gibt es 20 % Rabatt auf Lager
+	erweiterungen\, Wiederaufladender „Teleport zum Freund“\, Schwarzlöwe
+	n-Auftragstafeln und Schwarzlöwen-Gartenbeet-Urkunden!\n\n\n\n	Loggt euch
+	 in Guild Wars 2 ein und drückt die Taste „O“\, um diese – und 
+	viele weitere – fantastischen Angebote im Edelsteinshop der Schwarzlöwe
+	n-Handelsgesellschaft zu nutzen!\n\n
+DTSTART:20240102T170000Z
+DTEND:20240115T080000Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Beta-Test der Welten-Umstrukturierung
+DTSTAMP:20240111T164648Z
+SEQUENCE:0
+UID:4-1-47fbf5e5b75e97f949cf6d7a8831ed71@de-forum.guildwars2.com
+ORGANIZER;CN="Rubi Bayer.8493":noreply@invisioncloudcommunit
+	y.com
+DESCRIPTION:\n	Die Beta läuft von Freitag\, den 12. Januar bis Freitag\
+	, den 2. Februar\, und zwar jeweils von und bis zur gewohnten WvW-Reset-Ze
+	it eurer Region. \n\n\n\n	Hier könnt ihr mehr lesen und Feedback hinterl
+	assen.\n\n\n\n	 \n\n\n\n	 \n\n
+DTSTART:20240112T080000Z
+DTEND:20240202T080000Z
+END:VEVENT
+END:VCALENDAR

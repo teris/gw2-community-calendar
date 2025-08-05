@@ -1,205 +1,246 @@
-# GW2 Community Calendar - WordPress Plugin
+# GW2 Community Calendar Plugin
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/your-username/gw2-community-calendar)
-[![WordPress](https://img.shields.io/badge/WordPress-Plugin-green.svg)](https://wordpress.org/)
-[![License](https://img.shields.io/badge/license-GPL%20v2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+Ein WordPress-Plugin für die Anzeige von Guild Wars 2 Community Events mit verschiedenen Widget-Shortcodes.
 
-Ein dynamisches WordPress-Plugin für die Anzeige von Guild Wars 2 Community Events aus der offiziellen ICS-Datei. Das Plugin bietet eine vollständige Kalenderlösung mit automatischem Download, manueller Upload-Funktion und umfangreichen Anpassungsmöglichkeiten.
+**Version: 1.5.0**
 
-## 🌟 Features
+## Features
 
-- **📅 Vollständiger Kalender**: Monats-, Wochen-, Tages- und Listenansicht
-- **🔄 Automatischer Download**: Lädt täglich automatisch die neuesten Events
-- **📤 Manueller Upload**: ICS-Datei direkt über Admin-Interface hochladen
-- **🌍 Mehrsprachige Unterstützung**: 14 Sprachen unterstützt
-- **🎨 Anpassbare Einstellungen**: Wochenstart, benutzerdefiniertes CSS
-- **📱 Responsive Design**: Funktioniert auf allen Geräten
-- **⚡ Cache-System**: Effiziente Speicherung der Events
-- **🔧 Admin-Interface**: Umfassende Verwaltung über WordPress Admin
+- **Vollständiger Kalender**: Interaktiver Kalender mit FullCalendar.js
+- **Event-Listen**: Verschiedene Listen-Ansichten für Events
+- **Countdown-Widgets**: Countdown für spezifische Events
+- **Heutige Events**: Anzeige der Events von heute
+- **Responsive Design**: Optimiert für alle Geräte
+- **Admin-Interface**: Einfache Verwaltung über WordPress Admin
 
-## 🚀 Schnellstart
+## Screenshots
 
-### Installation
+### Admin-Bereich
+![Admin-Bereich](cache/screen.png)
 
-1. **Plugin herunterladen** und in `/wp-content/plugins/gw2-community-calendar/` entpacken
-2. **Plugin aktivieren** im WordPress Admin unter "Plugins"
-3. **Einstellungen konfigurieren** unter "Einstellungen → GW2 Kalender"
-4. **Shortcode einbinden**: `[gw2_calendar]`
+### Kalender-Ansicht
+![Kalender-Ansicht](cache/screen2.png)
 
-### Kalender einbinden
+### Event-Listen Widget
+![Event-Listen Widget](cache/screen3.png)
 
+### Countdown Widget
+![Countdown Widget](cache/screen4.png)
+
+## Installation
+
+1. Laden Sie das Plugin in Ihr WordPress-Verzeichnis hoch
+2. Aktivieren Sie das Plugin in WordPress Admin
+3. Gehen Sie zu "Einstellungen > GW2 Kalender"
+4. Laden Sie eine ICS-Datei hoch oder konfigurieren Sie den automatischen Download
+
+## Verfügbare Shortcodes
+
+### 1. Vollständiger Kalender
 ```php
-// In Seiten oder Beiträgen
 [gw2_calendar]
+```
 
-// Mit benutzerdefinierten Dimensionen
+**Parameter:**
+- `width` - Breite des Kalenders (Standard: 100%)
+- `height` - Höhe des Kalenders (Standard: 600px)
+
+**Beispiel:**
+```php
 [gw2_calendar width="800px" height="500px"]
 ```
 
-## 📋 Detaillierte Installation
+### 2. Event-Liste
+```php
+[gw2_events_list]
+```
 
-Für eine vollständige Anleitung siehe [INSTALLATION.md](INSTALLATION.md).
+**Parameter:**
+- `limit` - Anzahl der Events (Standard: 10)
+- `show_date` - Datum anzeigen (Standard: true)
+- `show_time` - Zeit anzeigen (Standard: true)
+- `show_location` - Ort anzeigen (Standard: true)
+- `show_description` - Beschreibung anzeigen (Standard: false)
+- `css_class` - CSS-Klasse für das Container-Element (Standard: gw2-events-list)
+- `debug` - Debug-Informationen anzeigen (Standard: false)
 
-### Abhängigkeiten
+**Beispiel:**
+```php
+[gw2_events_list limit="5" show_description="true"]
+```
 
-Das Plugin benötigt FullCalendar.js. Fügen Sie folgendes in Ihre `functions.php` ein:
+**Debug-Beispiel:**
+```php
+[gw2_events_list debug="true"]
+```
+
+### 3. Nächste Events
+```php
+[gw2_next_events]
+```
+
+**Parameter:**
+- `count` - Anzahl der Events (Standard: 5)
+- `days_ahead` - Tage in die Zukunft (Standard: 30)
+
+**Beispiel:**
+```php
+[gw2_next_events count="3" days_ahead="14"]
+```
+
+### 4. Event Countdown
+```php
+[gw2_event_countdown]
+```
+
+**Parameter:**
+- `event_id` - Spezifische Event-ID (Standard: nächstes Event)
+
+**Beispiel:**
+```php
+[gw2_event_countdown event_id="event123"]
+```
+
+### 5. Heutige Events
+```php
+[gw2_today_events]
+```
+
+**Parameter:**
+- `show_time` - Zeit anzeigen (Standard: true)
+- `show_location` - Ort anzeigen (Standard: true)
+
+**Beispiel:**
+```php
+[gw2_today_events show_location="false"]
+```
+
+## Widget-Verwendung
+
+### Sidebar-Widgets
+Alle Shortcodes können in WordPress-Widgets verwendet werden:
+
+1. Gehen Sie zu "Darstellung > Widgets"
+2. Fügen Sie ein "Text"-Widget hinzu
+3. Fügen Sie den gewünschten Shortcode ein
+
+### Seiten und Beiträge
+Fügen Sie Shortcodes direkt in Seiten oder Beiträge ein:
 
 ```php
-function enqueue_fullcalendar() {
-    wp_enqueue_style('fullcalendar', 'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css');
-    wp_enqueue_script('fullcalendar', 'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js', array(), null, true);
-    wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), null, true);
-    wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
-}
-add_action('wp_enqueue_scripts', 'enqueue_fullcalendar');
+<!-- Vollständiger Kalender -->
+[gw2_calendar]
+
+<!-- Event-Liste für Sidebar -->
+[gw2_events_list limit="5" show_description="false"]
+
+<!-- Countdown für nächstes Event -->
+[gw2_event_countdown]
+
+<!-- Heutige Events -->
+[gw2_today_events]
 ```
 
-## ⚙️ Konfiguration
+## Admin-Konfiguration
 
-### Admin-Einstellungen
+### Kalender-Verwaltung
+- **Manueller Download**: Laden Sie ICS-Dateien direkt hoch
+- **Automatischer Download**: Automatischer Download von der GW2-Community
+- **Status prüfen**: Überprüfen Sie den Download-Status
 
-Zugriff über **WordPress Admin → Einstellungen → GW2 Kalender**
+### Einstellungen
+- **Wochenstart**: Montag oder Sonntag
+- **Benutzerdefiniertes CSS**: Anpassung des Aussehens
 
-#### Verfügbare Funktionen:
-- **Kalender-Verwaltung**: Download-Buttons und Modus-Umschaltung
-- **ICS-Datei Upload**: Direkter Upload über Admin-Interface
-- **Kalender-Einstellungen**: Wochenstart und benutzerdefiniertes CSS
-- **Cache-Informationen**: Detaillierte Status-Anzeige
+## CSS-Anpassungen
 
-#### Wochenstart
-- **Montag**: Kalender beginnt mit Montag (europäischer Standard)
-- **Sonntag**: Kalender beginnt mit Sonntag (amerikanischer Standard)
+Das Plugin bietet verschiedene CSS-Klassen für Anpassungen:
 
-#### Benutzerdefiniertes CSS
 ```css
-/* Beispiel: Kalender-Container anpassen */
-.gw2-calendar-container {
-    border: 2px solid #0073aa;
-    border-radius: 8px;
-    padding: 15px;
-}
+/* Event-Liste */
+.gw2-events-list { }
+.gw2-event-item { }
+.gw2-event-title { }
 
-/* Beispiel: Event-Farben ändern */
-.fc-event {
-    background-color: #28a745 !important;
-    border-color: #1e7e34 !important;
-}
+/* Nächste Events */
+.gw2-next-events { }
+.gw2-next-event-item { }
+
+/* Countdown */
+.gw2-event-countdown { }
+.gw2-countdown-timer { }
+
+/* Heutige Events */
+.gw2-today-events { }
+.gw2-today-event-item { }
 ```
 
-## 🌍 Mehrsprachige Unterstützung
+## Troubleshooting
 
-Das Plugin unterstützt automatisch die WordPress-Spracheinstellung:
+### Events werden nicht angezeigt
+1. Prüfen Sie, ob eine ICS-Datei hochgeladen wurde
+2. Überprüfen Sie den Download-Status im Admin-Bereich
+3. Stellen Sie sicher, dass die ICS-Datei gültig ist
 
-### Unterstützte Sprachen
-- Deutsch (de), Englisch (en), Französisch (fr), Spanisch (es)
-- Italienisch (it), Niederländisch (nl), Polnisch (pl), Portugiesisch (pt)
-- Russisch (ru), Schwedisch (sv), Türkisch (tr), Chinesisch (zh)
-- Japanisch (ja), Koreanisch (ko)
+### Kalender lädt nicht
+1. Prüfen Sie die Browser-Konsole auf JavaScript-Fehler
+2. Stellen Sie sicher, dass FullCalendar.js geladen wird
+3. Überprüfen Sie die Netzwerkverbindung
 
-### Lokalisierte Elemente
-- **Header-Buttons**: "today", "month", "week", "day", "list"
-- **Datumsformatierung**: Event-Details im lokalen Format
-- **Kalender-Navigation**: Monats- und Tagesnamen
+### Styling-Probleme
+1. Verwenden Sie das benutzerdefinierte CSS-Feld im Admin
+2. Prüfen Sie auf CSS-Konflikte mit dem Theme
+3. Testen Sie in einem anderen Browser
 
-## 📁 Dateistruktur
+## Support
 
-```
-gw2-community-calendar/
-├── gw2-community-calendar.php    # Haupt-Plugin-Datei
-├── js/
-│   ├── calendar.js               # Frontend JavaScript
-│   └── admin.js                  # Admin JavaScript
-├── css/
-│   ├── calendar.css              # Frontend Styles
-│   └── admin.css                 # Admin Styles
-├── cache/                        # Cache-Verzeichnis
-│   ├── .htaccess                 # Schutz-Datei
-│   ├── index.php                 # Schutz-Datei
-│   └── calendarEvents.ics        # ICS-Datei (wird automatisch erstellt)
-├── README.md                     # Diese Datei
-├── INSTALLATION.md               # Detaillierte Installationsanleitung
-└── MANUAL_UPLOAD_INSTRUCTIONS.md # Upload-Anleitung
-```
+Bei Problemen oder Fragen:
+1. Überprüfen Sie die WordPress-Fehlerprotokolle
+2. Testen Sie das Plugin in einer sauberen WordPress-Installation
+3. Stellen Sie sicher, dass alle Abhängigkeiten verfügbar sind
 
-## 🔧 Troubleshooting
+## Changelog
 
-### Häufige Probleme
+### Version 1.5.0 (Aktuell)
+- **Neue Features:**
+  - Mehrere neue Widget-Shortcodes hinzugefügt (`gw2_events_list`, `gw2_next_events`, `gw2_event_countdown`, `gw2_today_events`)
+  - Event-ID-Liste im Admin-Bereich für einfache Verwendung des Countdown-Shortcodes
+  - Debug-Modus für `gw2_events_list` Shortcode zur Fehlerdiagnose
+  - Automatische Filterung der Event-IDs (nur aktuelle und zukünftige Events)
+  - Download-URL-Test-Funktion im Admin-Bereich
 
-**Kalender wird nicht angezeigt:**
-- FullCalendar.js korrekt eingebunden?
-- JavaScript-Fehler in Browser-Konsole?
-- Plugin aktiviert?
+- **Verbesserungen:**
+  - Zwei-Spalten-Layout im Admin-Bereich für bessere Übersichtlichkeit
+  - Erweiterte CSS-Styles für alle neuen Widget-Shortcodes
+  - Verbesserte ICS-Datei-Parsing-Logik mit Unterstützung für mehrzeilige Felder
+  - Explizite UTC-Zeitzonen-Behandlung für zuverlässigere Datums-/Zeit-Anzeige
+  - Robuste Sortierung mit DateTime-Objekten statt strtotime()
+  - Eindeutige Kalender-IDs für mehrere Kalender-Instanzen auf derselben Seite
+  - Responsive Design-Optimierungen für alle Widget-Shortcodes
 
-**Events werden nicht geladen:**
-- Cache-Verzeichnis beschreibbar?
-- ICS-Datei vorhanden?
-- Manueller Download getestet?
+- **Bugfixes:**
+  - Korrektur der ICS-URL von `webcal://` zu `https://` für zuverlässigen automatischen Download
+  - Behebung von Datums-Anzeigeproblemen bei zukünftigen Events
+  - Korrektur der mehrzeiligen ICS-Feld-Parsing (Faltung)
+  - Verbesserte Behandlung von `DTSTART;VALUE=DATE` Format
+  - Entfernung des fehlerhaften Click-to-Copy-Features
+  - Behebung von Kalender-Anzeigeproblemen bei mehreren Instanzen
 
-**Upload-Probleme:**
-- Datei ≤ 5MB?
-- Nur .ics Dateien
-- Cache-Verzeichnis-Berechtigungen
-
-### HTTP 403 Fehler
-
-Bei 403-Fehlern beim automatischen Download:
-1. Verwenden Sie die **manuelle Upload-Funktion** im Admin
-2. Laden Sie die ICS-Datei direkt hoch
-3. Das Plugin wechselt automatisch in den manuellen Modus
-
-## 📈 Changelog
+- **Entfernte Features:**
+  - Mini-Kalender Shortcode entfernt (auf Benutzerwunsch)
 
 ### Version 1.1.0
-- ✨ **Neue Features:**
-  - ICS-Datei Upload über Admin-Interface
-  - Mehrsprachige Unterstützung (14 Sprachen)
-  - Anpassbare Kalender-Einstellungen
-  - Cache-Verzeichnis im Plugin-Ordner
-  - Plugin-Einstellungen Link in Plugin-Liste
-- 🔧 **Verbesserungen:**
-  - FullCalendar v6 Lokalisierung
-  - Dynamische Button-Text-Übersetzung
-  - Verbesserte Fehlerbehandlung
-  - Umfassende Admin-Oberfläche
-- 🐛 **Bugfixes:**
-  - HTTP 403 Fehler-Behandlung
-  - Lokalisierungsdatei-Probleme behoben
+- Neue Widget-Shortcodes hinzugefügt
+- Verbesserte CSS-Styles
+- Erweiterte Admin-Dokumentation
+- Responsive Design-Optimierungen
 
 ### Version 1.0.0
-- Erste Veröffentlichung
-- Automatischer und manueller Download
-- Vollständiger Kalender mit verschiedenen Ansichten
-- Responsive Design
-- Deutsche Lokalisierung
+- Grundlegende Kalender-Funktionalität
+- ICS-Datei-Support
+- Admin-Interface
+- Vollständiger Kalender-Shortcode
 
-## 🤝 Support
+## Lizenz
 
-### Hilfe benötigt?
-
-1. **Dokumentation lesen**: [INSTALLATION.md](INSTALLATION.md)
-2. **Upload-Anleitung**: [MANUAL_UPLOAD_INSTRUCTIONS.md](MANUAL_UPLOAD_INSTRUCTIONS.md)
-3. **WordPress Debug-Logs** überprüfen
-4. **Saubere Installation** testen
-
-### Fehler melden
-
-Bitte erstellen Sie ein Issue auf GitHub mit:
-- WordPress Version
-- Plugin Version
-- Fehlerbeschreibung
-- Browser/System-Informationen
-
-## 📄 Lizenz
-
-Dieses Plugin ist unter der **GPL v2 oder später** lizenziert.
-
-## 🙏 Credits
-
-- **FullCalendar.js**: Für die Kalender-Funktionalität
-- **Guild Wars 2 Community**: Für die Event-Daten
-- **WordPress**: Für das Plugin-Framework
-- **Bootstrap**: Für UI-Komponenten
-
----
-
-**Entwickelt von TerisC** | [GitHub Repository](https://github.com/teris/gw2-community-calendar) 
+GPL v2 oder später 

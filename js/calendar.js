@@ -4,8 +4,9 @@ jQuery(document).ready(function($) {
     var startTime = Date.now();
 
     function initializeCalendar() {
-        var calendarEl = document.getElementById('gw2-calendar');
-        if (!calendarEl) return;
+        // Find all calendar elements
+        var calendarElements = document.querySelectorAll('.gw2-calendar');
+        if (calendarElements.length === 0) return;
 
         // Prüfen, ob maximale Wartezeit überschritten wurde
         if (Date.now() - startTime > maxWaitTime) {
@@ -153,62 +154,72 @@ jQuery(document).ready(function($) {
         // Wir verwenden die Locale direkt ohne separate Skripte zu laden
         console.log('FullCalendar Lokalisierung verwenden für:', fcLocale);
         
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth',
-            locale: fcLocale, // FullCalendar v6 hat eingebaute Lokalisierung
-            firstDay: gw2_ajax.week_start === 'monday' ? 1 : 0, // 1 = Montag, 0 = Sonntag
-            headerToolbar: {
-                left: 'prev,next,today',
-                center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
-            },
-            buttonText: currentButtonTexts,
-            events: function(info, successCallback, failureCallback) {
-                $.ajax({
-                    url: gw2_ajax.ajax_url,
-                    method: 'POST',
-                    data: {
-                        action: 'get_calendar_events',
-                        nonce: gw2_ajax.nonce
-                    },
-                    success: function(response) {
-                        if (response.success) {
-                            successCallback(response.data);
-                        } else {
-                            console.error('AJAX Fehler:', response);
-                            failureCallback('Fehler beim Laden der Kalenderdaten: ' + (response.data || 'Unbekannter Fehler'));
+        // Initialize all calendar instances
+        var calendars = [];
+        calendarElements.forEach(function(calendarEl, index) {
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                locale: fcLocale, // FullCalendar v6 hat eingebaute Lokalisierung
+                firstDay: gw2_ajax.week_start === 'monday' ? 1 : 0, // 1 = Montag, 0 = Sonntag
+                headerToolbar: {
+                    left: 'prev,next,today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                },
+                buttonText: currentButtonTexts,
+                events: function(info, successCallback, failureCallback) {
+                    $.ajax({
+                        url: gw2_ajax.ajax_url,
+                        method: 'POST',
+                        data: {
+                            action: 'get_calendar_events',
+                            nonce: gw2_ajax.nonce
+                        },
+                        success: function(response) {
+                            if (response.success) {
+                                successCallback(response.data);
+                            } else {
+                                console.error('AJAX Fehler:', response);
+                                failureCallback('Fehler beim Laden der Kalenderdaten: ' + (response.data || 'Unbekannter Fehler'));
+                            }
+                        },
+                        error: function(xhr, status, error) {
+                            console.error('AJAX Netzwerkfehler:', status, error);
+                            console.error('HTTP Status:', xhr.status);
+                            console.error('Response:', xhr.responseText);
+                            failureCallback('Netzwerkfehler beim Laden der Kalenderdaten. Status: ' + xhr.status);
                         }
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('AJAX Netzwerkfehler:', status, error);
-                        console.error('HTTP Status:', xhr.status);
-                        console.error('Response:', xhr.responseText);
-                        failureCallback('Netzwerkfehler beim Laden der Kalenderdaten. Status: ' + xhr.status);
+                    });
+                },
+                eventClick: function(info) {
+                    showEventDetails(info.event);
+                },
+                eventDidMount: function(info) {
+                    $(info.el).tooltip({
+                        title: info.event.title,
+                        placement: 'top',
+                        trigger: 'hover',
+                        container: 'body'
+                    });
+                },
+                loading: function(isLoading) {
+                    if (isLoading) {
+                        $(calendarEl).addClass('loading');
+                    } else {
+                        $(calendarEl).removeClass('loading');
                     }
-                });
-            },
-            eventClick: function(info) {
-                showEventDetails(info.event);
-            },
-            eventDidMount: function(info) {
-                $(info.el).tooltip({
-                    title: info.event.title,
-                    placement: 'top',
-                    trigger: 'hover',
-                    container: 'body'
-                });
-            },
-            loading: function(isLoading) {
-                if (isLoading) {
-                    $('#gw2-calendar').addClass('loading');
-                } else {
-                    $('#gw2-calendar').removeClass('loading');
                 }
-            }
-        });
+            });
 
-        calendar.render();
-        window.gw2Calendar = calendar;
+            calendar.render();
+            calendars.push(calendar);
+        });
+        
+        // Store calendars in window object for access
+        window.gw2Calendars = calendars;
+        if (calendars.length > 0) {
+            window.gw2Calendar = calendars[0]; // Keep backward compatibility
+        }
 
         // Event Details Modal
         function showEventDetails(event) {
@@ -266,8 +277,10 @@ jQuery(document).ready(function($) {
                 success: function(response) {
                     if (response.success) {
                         status.text(response.data).addClass('success');
-                        if (window.gw2Calendar) {
-                            window.gw2Calendar.refetchEvents();
+                        if (window.gw2Calendars) {
+                            window.gw2Calendars.forEach(function(calendar) {
+                                calendar.refetchEvents();
+                            });
                         }
                     } else {
                         status.text(response.data).addClass('error');
@@ -284,8 +297,10 @@ jQuery(document).ready(function($) {
 
         // Auto-Refresh alle 5 Minuten
         setInterval(function() {
-            if (window.gw2Calendar) {
-                window.gw2Calendar.refetchEvents();
+            if (window.gw2Calendars) {
+                window.gw2Calendars.forEach(function(calendar) {
+                    calendar.refetchEvents();
+                });
             }
         }, 300000);
     }
